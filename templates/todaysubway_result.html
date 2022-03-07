@@ -1,55 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>오늘의 Subway, 나만의 꿀조합</title>
-    <link rel="stylesheet" type="text/css" href="todaysubway_result.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../static/todaysubway_result.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-
-
-</head>
-
-<body>
-<script src="todaysubway_result.js"></script>
-<div class="bg">
-    <div style="text-align:center;" class="logo-box">
-        <button class="btn-logo" id="btn-logo" type="submit"><img class="logo" src="https://drive.google.com/uc?id=1QmRgyO-K9wb40ifclihR7kkpS9Fl-3ij">
+  <body>
+    <script src="../static/todaysubway_result.js"></script>
+    <div class="bg">
+      <div style="text-align: center" class="logo-box">
+        <button class="btn-logo" id="btn-logo" type="submit">
+          <img
+            class="logo"
+            src="https://drive.google.com/uc?id=1QmRgyO-K9wb40ifclihR7kkpS9Fl-3ij"
+          />
         </button>
-    </div>
+      </div>
 
-    <div>
-        <div class="result-box" style="position: relative;">
-            <div style="position: absolute; left: 25vw; top:10vw;"><img class="bar-title" id="bar-title" src="https://drive.google.com/uc?id=1Ways8U1w59n0EtAMRI1PQkFQ_MQV4vVM"></div>
-            <div style="position: absolute; left: 33vw; top:17vw;"><img class="bar-bread" id="bar-bread" src="https://drive.google.com/uc?id=11X3DD4jXWBJqg5lp-qdYaDb8L7wFyOeu"></div>
-            <div style="position: absolute; left: 33.3vw; top:25vw;"><img class="bar-sauce" id="bar-sauce" src="https://drive.google.com/uc?id=1xgMJMT19UtQnUmG96rKRvSOjFwJX4kOt"></div>
-            <div style="position: absolute; left: 33vw; top:30vw;"><img class="bar-cheese" id="bar-cheese" src="https://drive.google.com/uc?id=1UmUNlUiUlHS6l1RxTEHImZwlBogi_olA"></div>
+      <div>
+        <div class="result-box" style="position: relative">
+          <div style="position: absolute; left: 25vw; top: 10vw">
+            <img
+              class="bar-title"
+              id="bar-title"
+              src="https://drive.google.com/uc?id=1Ways8U1w59n0EtAMRI1PQkFQ_MQV4vVM"
+            />
+          </div>
+          <div style="position: absolute; left: 33vw; top: 17vw">
+            <img
+              class="bar-bread"
+              id="bar-bread"
+              src="https://drive.google.com/uc?id=11X3DD4jXWBJqg5lp-qdYaDb8L7wFyOeu"
+            />
+          </div>
+          <div style="position: absolute; left: 33.3vw; top: 25vw">
+            <img
+              class="bar-sauce"
+              id="bar-sauce"
+              src="https://drive.google.com/uc?id=1xgMJMT19UtQnUmG96rKRvSOjFwJX4kOt"
+            />
+          </div>
+          <div style="position: absolute; left: 33vw; top: 30vw">
+            <img
+              class="bar-cheese"
+              id="bar-cheese"
+              src="https://drive.google.com/uc?id=1UmUNlUiUlHS6l1RxTEHImZwlBogi_olA"
+            />
+          </div>
 
-            <div style="position: absolute; left: 26vw; top: 7vw; font-size: 2.6vw; font-weight: 900;">나만의 서브웨이 꿀조합</div>
-            <div id="menu" class="name-div" style="position: absolute; left: 0vw; top:15vw;"><span class="name">["아보카도"]</span></div>
-            <div id="bread" style="position: absolute; left: 48vw; top:16.7vw; font-size: 2vw; font-weight: bold;">플랫브래드</div>
-            <div id="sauce" style="position: absolute; left: 49vw; top: 24.7vw; font-size: 1.8vw; font-weight: bold;">스위트 칠리, 허니머스타드</div>
-            <div id="cheese" style="position: absolute; left: 46vw; top: 31.5vw; font-size: 2vw; font-weight: bold;">아메리칸 치즈</div>
-            <div style="position: absolute; left: 0vw; top: 13vw;"><img class="img-sdw" id="img-sdw" src="https://www.subway.co.kr/upload/menu/%EC%95%B1%EC%9A%A9_%EB%A1%9C%ED%8B%B0%EC%84%B8%EB%A6%AC_%EB%B0%94%EB%B9%84%ED%81%90_%EC%B9%98%ED%82%A8_%EC%95%84%EB%B3%B4%EC%B9%B4%EB%8F%84_15cm_%EB%8B%A8%ED%92%88_20220228055941893.png"></div>
+          <div
+            style="
+              position: absolute;
+              left: 26vw;
+              top: 7vw;
+              font-size: 2.6vw;
+              font-weight: 900;
+            "
+          >
+            나만의 서브웨이 꿀조합
+          </div>
+          <div
+            id="menu"
+            class="name-div"
+            style="position: absolute; left: 0vw; top: 15vw"
+          >
+            <span class="name">["아보카도"]</span>
+          </div>
+          <div
+            id="bread"
+            style="
+              position: absolute;
+              left: 48vw;
+              top: 16.7vw;
+              font-size: 2vw;
+              font-weight: bold;
+            "
+          >
+            플랫브래드
+          </div>
+          <div
+            id="sauce"
+            style="
+              position: absolute;
+              left: 49vw;
+              top: 24.7vw;
+              font-size: 1.8vw;
+              font-weight: bold;
+            "
+          >
+            스위트 칠리, 허니머스타드
+          </div>
+          <div
+            id="cheese"
+            style="
+              position: absolute;
+              left: 46vw;
+              top: 31.5vw;
+              font-size: 2vw;
+              font-weight: bold;
+            "
+          >
+            아메리칸 치즈
+          </div>
+          <div style="position: absolute; left: 0vw; top: 13vw">
+            <img
+              class="img-sdw"
+              id="img-sdw"
+              src="https://www.subway.co.kr/upload/menu/%EC%95%B1%EC%9A%A9_%EB%A1%9C%ED%8B%B0%EC%84%B8%EB%A6%AC_%EB%B0%94%EB%B9%84%ED%81%90_%EC%B9%98%ED%82%A8_%EC%95%84%EB%B3%B4%EC%B9%B4%EB%8F%84_15cm_%EB%8B%A8%ED%92%88_20220228055941893.png"
+            />
+          </div>
 
-            <button style="position: absolute; left: 36vw; top:35vw;" class="btn-kcal" id="btn-kcal" type="submit"><img class="kcal" src="https://drive.google.com/uc?id=1ier8d-HvBCSlO5SL6OvKjCK4bhSKgHtJ"></button>
-            <div id="txt-kcal" style="position: absolute; left: 37vw; top: 38.5vw; font-size: 2vw; font-weight: bold;">300kcal</div>
+          <button
+            style="position: absolute; left: 36vw; top: 35vw"
+            class="btn-kcal"
+            id="btn-kcal"
+            type="submit"
+          >
+            <img
+              class="kcal"
+              src="https://drive.google.com/uc?id=1ier8d-HvBCSlO5SL6OvKjCK4bhSKgHtJ"
+            />
+          </button>
+          <div
+            id="txt-kcal"
+            style="
+              position: absolute;
+              left: 37vw;
+              top: 38.5vw;
+              font-size: 2vw;
+              font-weight: bold;
+            "
+          >
+            300kcal
+          </div>
 
-            <div style="position: absolute; left:6vw; top:45vw;">
-            <input class="input-tip" type="text" placeholder=" 당신만의 추가 팁이 있다면?">
-            </div>
+          <div style="position: absolute; left: 6vw; top: 45vw">
+            <input
+              class="input-tip"
+              type="text"
+              placeholder=" 당신만의 추가 팁이 있다면?"
+            />
+          </div>
 
-            <button style="position: absolute; left: 61.5vw; top:42vw;" class="btn-go" id="btn-go" type="submit"><img class="go" src="https://drive.google.com/uc?id=10cJnMLaYvRy1jvh6nQgSyFgIVvCVbZht"></button>
-
-
-
-
-
+          <button
+            style="position: absolute; left: 61.5vw; top: 42vw"
+            class="btn-go"
+            id="btn-go"
+            type="submit"
+          >
+            <img
+              class="go"
+              src="https://drive.google.com/uc?id=10cJnMLaYvRy1jvh6nQgSyFgIVvCVbZht"
+            />
+          </button>
         </div>
-
-
+      </div>
     </div>
-
-</div>
-</body>
+  </body>
 </html>
