@@ -6,7 +6,7 @@
             background-image: url("https://drive.google.com/uc?id=1pjmsyqrniNHO5-fLGWrqvNqlw_V18Yzl");
             background-repeat: repeat;
             width: 100vw;
-            height: calc(100vh + 20vw);
+            height: calc(100vh + 30vw);
 
         }
 
@@ -17,18 +17,19 @@
 
         .logo{
             height:20vh;
-            cursor: pointer;
+
         }
 
         .btn-logo{
             border: none;
             background: white;
+            cursor: pointer;
         }
 
         .result-box{
             background-color: white;
             width: 80vw;
-            height: 45vw;
+            height: 60vw;
             margin: 5vw auto auto auto;
             border-radius: 2vw;
         }
@@ -84,21 +85,37 @@
 
         .input-tip{
             border: none;
-            border-radius: 3px;
             background-color: rgb(197, 224, 180);
             width: 56vw;
             height: 3.5vw;
-            font-size: 1.8vw;
+        }
+        .input-tip2{
+            width: 56vw;
+            height: 3.5vw;
+            font-size: 2vw;
+            text-align: center;
         }
 
-        .go{
-            width: 16vw;
+
+        .img-tape{
+            width: 9vw;
+        }
+
+        .img-share{
+            width: 6.6vw;
+        }
+
+        .btn-share{
+            border: none;
+            background: none;
             cursor: pointer;
         }
-        .btn-go{
-            border: none;
-            background: white;
+
+        .img-map{
+            width: 21.6vw;
+
         }
+
 
 
 
