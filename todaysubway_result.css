@@ -1,0 +1,106 @@
+*{font-family: 'Nanum Gothic Coding', monospace;
+
+        }
+
+        .bg {
+            background-image: url("https://drive.google.com/uc?id=1pjmsyqrniNHO5-fLGWrqvNqlw_V18Yzl");
+            background-repeat: repeat;
+            width: 100vw;
+
+        }
+
+        .logo-box{
+            background-color: white;
+            width: 100vw;
+        }
+
+        .logo{
+            height:20vh;
+            cursor: pointer;
+        }
+
+        .btn-logo{
+            border: none;
+            background: white;
+        }
+
+        .result-box{
+            background-color: white;
+            width: 80vw;
+            height: 50vw;
+            margin: 6vw auto auto auto;
+        }
+
+        .bar-title{
+            width: 30vw;
+        }
+
+        .bar-bread{
+            width: 13vw;
+        }
+
+        .bar-sauce{
+            width: 13.5vw;
+        }
+
+        .bar-cheese{
+            width: 11vw;
+        }
+
+        .name-div{
+            width: 35vw;
+            text-align: center;
+        }
+        .name{
+            font-size: 1.8vw;
+            font-weight: bold;
+
+
+        }
+
+
+        .img-sdw{
+            width: 35vw;
+        }
+
+        .kcal{
+            width: 8vw;
+            cursor: pointer;
+        }
+
+        .btn-kcal{
+            border: none;
+            background: white;
+        }
+
+        .input-tip{
+            border: none;
+            border-radius: 3px;
+            background-color: rgb(197, 224, 180);
+            width: 55vw;
+            height: 3.5vw;
+            font-size: 1.8vw;
+        }
+
+        .go{
+            width: 15vw;
+            cursor: pointer;
+        }
+        .btn-go{
+            border: none;
+            background: white;
+        }
+
+        a#btn-kcal {
+            display: inline-block;
+            width: 8vw;
+            background: url('https://drive.google.com/uc?id=1ier8d-HvBCSlO5SL6OvKjCK4bhSKgHtJ') no-repeat;
+        }
+
+        a#btn-kcal:hover {
+            background: url('https://drive.google.com/uc?id=1yKXxYAEp2uYtYN8DkPapZllzD3uVUID3') no-repeat;
+        }
+
+
+
+
