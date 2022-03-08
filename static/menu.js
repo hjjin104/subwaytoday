@@ -73,7 +73,7 @@ for (var i = 0; i < cheeseLinks.length; i++) {
 
 // 다 더해지는 값
 
-const submitButton = document.querySelector(".made");
+const submitButton = document.querySelector("#NextPage");
 
 function gogo() {
   const sandwich = document.querySelector(".sandwich").innerText;
