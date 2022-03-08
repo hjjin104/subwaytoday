@@ -44,7 +44,7 @@ for (var i = 0; i < breadLinks.length; i++) {
 //소스 선택시 버튼 변경 (다수 가능)
 
 // 치즈 선택시 버튼 변경
-var breadLinks = document.querySelectorAll(".select4");
+var cheeseLinks = document.querySelectorAll(".select4");
 
 function CheeseSelect() {
   var CheeseMenu = document.querySelector(".cheese");
@@ -54,6 +54,8 @@ function CheeseSelect() {
   this.classList.add("cheese");
 }
 
-for (var i = 0; i < breadLinks.length; i++) {
-  breadLinks[i].addEventListener("click", CheeseSelect);
+for (var i = 0; i < cheeseLinks.length; i++) {
+  cheeseLinks[i].addEventListener("click", CheeseSelect);
 }
+
+// 다 더해지는 값
