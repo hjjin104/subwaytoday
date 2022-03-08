@@ -3,7 +3,8 @@ app = Flask(__name__)
 
 from pymongo import MongoClient
 
-client = MongoClient('mongodb://test:test@52.79.241.120', 27017)
+client = MongoClient('localhost', 27017)
+# client = MongoClient('mongodb://test:test@52.79.241.120', 27017)
 db = client.dbhappy
 
 @app.route('/')
@@ -27,10 +28,13 @@ def check():
 def menuPost():
    sandwich_receive = request.form['sandwich_give']
    bread_receive = request.form['bread_give']
+   sauce_receive = request.form.getlist('sauce_give')
    cheese_receive = request.form['cheese_give']
+
    doc = {
       'sandwich': sandwich_receive,
       'bread': bread_receive,
+      'sauce': sauce_receive,
       'cheese': cheese_receive
    }
 
