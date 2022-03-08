@@ -35,7 +35,6 @@ def menuPost():
    }
 
    db.userchoice.insert_one(doc)
-   print(sandwich_receive, bread_receive, cheese_receive)
    return jsonify({'result':'success', 'msg': '완료되었습니다!'})
 
 
