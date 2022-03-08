@@ -18,20 +18,32 @@
     <script src="../static/todaysubway_list_top10.js"></script>
 
     <div class="bg">
-        <!--   상단 로고 -->
-        <div style="text-align: center" class="logo-box">
-            <button class="btn-logo" id="btn-logo" type="submit">
+        <!--   상단 로고 & new btn -->
+        <div style="position:relative;" class="logo-box">
+            <button style="position:absolute; left: calc(50vw - 18.6375vh); " class="btn-logo" id="btn-logo" type="submit">
                 <img
                         class="logo"
                         src="https://drive.google.com/uc?id=1QmRgyO-K9wb40ifclihR7kkpS9Fl-3ij"
                 />
             </button>
+
+            <button
+                    style="position: absolute; bottom: 2vw; left: calc(51vw + 18.6375vmax);"
+                    class="btn-top10"
+                    id="btn-new"
+                    type="submit"
+            >
+                <img
+                        class="img-new"
+                        src="https://drive.google.com/uc?id=1M6H_SB7yw1x-x5GZaFjJXS5oPFmsnq7e"/>
+            </button>
+
         </div>
 
-        <!--   인기순/최신순 btn & new btn-->
+        <!--   인기순/최신순 btn-->
         <div class="btn-box" style="position: relative;">
             <button
-                    style="position: absolute; top: 5.942vw; left: 21vw;"
+                    style="position: absolute; top: 1.942vw; left: 27vw;"
                     class="btn-top10"
                     id="btn-top10"
                     type="submit"
@@ -42,7 +54,7 @@
             </button>
 
             <button
-                    style="position: absolute; top: 5.942vw; left: 43vw;"
+                    style="position: absolute; top: 1.942vw; left: 50vw;"
                     class="btn-top10"
                     id="btn-recent"
                     type="submit"
@@ -52,16 +64,6 @@
                         src="https://drive.google.com/uc?id=1E_Qr-NyImEf3jdYpHyfgFJEghfDdMjxK"/>
             </button>
 
-            <button
-                    style="position: absolute; top: 5vw; left: 68vw;"
-                    class="btn-top10"
-                    id="btn-new"
-                    type="submit"
-            >
-                <img
-                        class="img-new"
-                        src="https://drive.google.com/uc?id=1M6H_SB7yw1x-x5GZaFjJXS5oPFmsnq7e"/>
-            </button>
 
 
 
@@ -70,7 +72,20 @@
         <!--   본문 초록박스-->
         <div class="green-box" style="position: relative;">
 
-            <!--   검색창 -->
+
+        <!--   검색창-->
+            <div style="position: absolute; right: 4vw; top: 2vw">
+                <img class="search-img" src="https://drive.google.com/uc?id=1b9E3nGJ7WDhS5i3S8pj4nzbYnW33pmey"/>
+            </div>
+
+            <div style="position: absolute; right: 13vw; top: 2.4vw"">
+                <input id="search-input" class="search-input" type = "text">
+            </div>
+
+            <button style="position: absolute; right: 4vw; top: 2vw" id="search-btn" class="search-btn" type="submit"></button>
+
+
+
 
             <!--   카드 간격: top: 전카드 + 29 -->
             <div class="white-cards" style="position: absolute; top: 8vw; left: 4vw;">
