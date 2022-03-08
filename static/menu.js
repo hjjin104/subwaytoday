@@ -86,13 +86,12 @@ function gogo() {
     data: {
       sandwich_give: sandwich,
       bread_give: bread,
-      cheese_give: cheese,
+      cheese_give: cheese
     },
     success: function (response) {
       // 성공하면
       if (response["result"] == "success") {
         alert(response["msg"]);
-        window.location.reload();
       }
     },
   });
