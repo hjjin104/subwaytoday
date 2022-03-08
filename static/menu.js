@@ -42,6 +42,19 @@ for (var i = 0; i < breadLinks.length; i++) {
   breadLinks[i].addEventListener("click", BreadSelect);
 }
 //소스 선택시 버튼 변경 (다수 가능)
+var sauceLinks = document.querySelectorAll(".select3");
+
+function SauceSelect() {
+  var SauceMenu = document.querySelector(".sauce");
+  if (SauceMenu) {
+    SauceMenu.classList.add("sauce");
+  }
+  this.classList.add("sauce");
+}
+
+for (var i = 0; i < sauceLinks.length; i++) {
+  sauceLinks[i].addEventListener("click", SauceSelect);
+}
 
 
 
@@ -80,21 +93,22 @@ function gogo() {
   const bread = document.querySelector(".bread").innerText;
   const cheese = document.querySelector(".cheese").innerText;
 
-    $.ajax({
-      type: "POST",
-      url: "/menu",
-      data: {
-        sandwich_give: sandwich,
-        bread_give: bread,
-        cheese_give: cheese
-      },
-      success: function (response) { // 성공하면
-        if(response['result'] == 'success') {
-        alert(response['msg']);
-        window.location.reload()}
+  $.ajax({
+    type: "POST",
+    url: "/menu",
+    data: {
+      sandwich_give: sandwich,
+      bread_give: bread,
+      cheese_give: cheese,
+    },
+    success: function (response) {
+      // 성공하면
+      if (response["result"] == "success") {
+        alert(response["msg"]);
+        window.location.reload();
       }
-    })
-  }
+    },
+  });
+}
 
-submitButton.addEventListener("click", gogo)
-
+submitButton.addEventListener("click", gogo);
