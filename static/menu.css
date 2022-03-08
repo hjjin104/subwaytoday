@@ -6,7 +6,17 @@ body {
   margin: 0px;
   padding: 0px;
 }
-
+/* 다음 페이지로 넘어가는 버튼 - 넘어갈때 쌓은 데이터를 보내 주어야 하는 작업이 필요하다. */
+#NextPage {
+  display: block;
+  margin: auto;
+  border: 0px;
+  margin-bottom: 10%;
+  cursor: pointer;
+}
+#NextImg {
+  width: 50%;
+}
 .bg {
   background-image: url("https://drive.google.com/uc?id=1pjmsyqrniNHO5-fLGWrqvNqlw_V18Yzl");
   background-repeat: repeat;
@@ -97,6 +107,7 @@ body {
   height: 3vw;
   color: rgb(255, 202, 8);
   background-color: rgb(0, 153, 71);
+  cursor: pointer;
 }
 
 .select:hover {
@@ -114,6 +125,7 @@ body {
   height: 3vw;
   color: rgb(255, 202, 8);
   background-color: rgb(0, 153, 71);
+  cursor: pointer;
 }
 
 .select2:hover {
@@ -131,6 +143,7 @@ body {
   height: 3vw;
   color: rgb(255, 202, 8);
   background-color: rgb(0, 153, 71);
+  cursor: pointer;
 }
 
 .select3:hover {
@@ -148,6 +161,7 @@ body {
   height: 3vw;
   color: rgb(255, 202, 8);
   background-color: rgb(0, 153, 71);
+  cursor: pointer;
 }
 
 .select4:hover {
