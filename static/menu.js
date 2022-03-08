@@ -56,6 +56,19 @@ for (var i = 0; i < sauceLinks.length; i++) {
   sauceLinks[i].addEventListener("click", SauceSelect);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 // 치즈 선택시 버튼 변경
 var cheeseLinks = document.querySelectorAll(".select4");
 
