@@ -6,9 +6,12 @@
             background-image: url("https://drive.google.com/uc?id=1pjmsyqrniNHO5-fLGWrqvNqlw_V18Yzl");
             background-repeat: repeat;
             width: 100vw;
-            height: calc(100vh + 30vw);
+            height: 350vw;
 
         }
+
+        /*상단 로고*/
+
 
         .logo-box{
             background-color: white;
@@ -17,31 +20,60 @@
 
         .logo{
             height:20vh;
-
+            cursor: pointer;
         }
 
         .btn-logo{
             border: none;
             background: white;
+        }
+
+        /*인기순/최신순 btn & new btn*/
+        .btn-box{
+            width: 100vw;
+            height: 12vw;
+        }
+
+        .btn-top10 {
+            border: none;
+            background-color: transparent;
             cursor: pointer;
         }
 
+        .img-top10{
+            width: 23vw;
+            height: 6.076vw;
+        }
+
+
+        .img-recent{
+            width: 26.358vw;
+            height: 6.076vw;
+
+        }
+
+        .img-new{
+            width: 28vw;
+        }
+
+
         /*본문*/
-        .result-box{
+        .green-box{
+            background-color: rgb(169, 209, 142);
+            width: 84vw;
+            height: 305vw;
+            margin: 0 auto auto auto;
+            border-radius: 1vw;
+
+        }
+
+        .white-cards{
             background-color: white;
-            width: 80vw;
-            height: 60vw;
-            margin: 5vw auto auto auto;
+            width: 76vw;
+            height: 28vw;
             border-radius: 2vw;
         }
 
-        .img-title{
-            width: 34vw;
-        }
-
-        .bar-title{
-            width: 30vw;
-        }
 
         .bar-bread{
             width: 10vw;
@@ -55,13 +87,12 @@
             width: 8vw;
         }
 
-        /*샌드위치*/
         .name-div{
             width: 30vw;
             text-align: center;
         }
         .name{
-            font-size: 1.8vw;
+            font-size: 2.1vw;
             font-weight: bold;
 
 
@@ -97,27 +128,29 @@
             text-align: center;
         }
 
-
-        /*데코오브젝트*/
-        .img-tape{
-            width: 9vw;
+        .nb-like{
+            width: 5vw;
+            height: 3 vw;
+            font-size: 2.2vw;
+            text-align: center;
+            font-weight: bolder;
+            color: white;
         }
 
-        /*공유버튼*/
-        .img-share{
-            width: 6.6vw;
+        .img-like{
+            width: 8vw;
         }
 
-        .btn-share{
-            border: none;
-            background: none;
-            cursor: pointer;
+        .ranking1{
+            width: 10vw;
         }
 
-        .img-map{
-            width: 21.6vw;
-
+        .ranking{
+            width: 7.5vw;
         }
+
+
+
 
 
 
