@@ -75,23 +75,43 @@ for (var i = 0; i < cheeseLinks.length; i++) {
 
 const submitButton = document.querySelector("#NextPage");
 
+
 function gogo() {
+  let sauceArr = [];
   const sandwich = document.querySelector(".sandwich").innerText;
   const bread = document.querySelector(".bread").innerText;
   const cheese = document.querySelector(".cheese").innerText;
+  const sauceAll = document.querySelectorAll(".sauce");
+
+  for (let i = 0; i < sauceAll.length; i++) {
+    let sauces = sauceAll[i].innerText;
+    sauceArr.push(sauces)
+  }
+
+ console.log(sauceArr)
 
   $.ajax({
     type: "POST",
     url: "/menu",
+    traditional : true,
     data: {
       sandwich_give: sandwich,
       bread_give: bread,
+<<<<<<< HEAD
       cheese_give: cheese
+=======
+      sauce_give: sauceArr,
+      cheese_give: cheese,
+>>>>>>> cd57e99e4dcdbc25d57513c6b701a747e1b4375d
     },
     success: function (response) {
       // 성공하면
       if (response["result"] == "success") {
         alert(response["msg"]);
+<<<<<<< HEAD
+=======
+        console.log(sandwich, bread, sauceArr, cheese)
+>>>>>>> cd57e99e4dcdbc25d57513c6b701a747e1b4375d
       }
     },
   });
