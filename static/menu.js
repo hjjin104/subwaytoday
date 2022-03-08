@@ -16,12 +16,9 @@ function openTab(evt, tabName) {
 var sandwichLinks = document.querySelectorAll(".select");
 
 function MenuSelect() {
-  var activeMenu =
-    document.querySelector(
-      ".sandwich"
-    ); /* querySelector 자체가 dom을 다 뒤져야 되므로 이것도 비효율적이라고 할 수 ㅇ..dom에 의존적 */
-  if (activeMenu) {
-    activeMenu.classList.remove("sandwich");
+  var SandwichMenu = document.querySelector(".sandwich");
+  if (SandwichMenu) {
+    SandwichMenu.classList.remove("sandwich");
   }
   this.classList.add("sandwich");
 }
@@ -34,12 +31,9 @@ for (var i = 0; i < sandwichLinks.length; i++) {
 var breadLinks = document.querySelectorAll(".select2");
 
 function BreadSelect() {
-  var activeMenu =
-    document.querySelector(
-      ".bread"
-    ); /* querySelector 자체가 dom을 다 뒤져야 되므로 이것도 비효율적이라고 할 수 ㅇ..dom에 의존적 */
-  if (activeMenu) {
-    activeMenu.classList.remove("bread");
+  var BreadMenu = document.querySelector(".bread");
+  if (BreadMenu) {
+    BreadMenu.classList.remove("bread");
   }
   this.classList.add("bread");
 }
@@ -47,17 +41,15 @@ function BreadSelect() {
 for (var i = 0; i < breadLinks.length; i++) {
   breadLinks[i].addEventListener("click", BreadSelect);
 }
+//소스 선택시 버튼 변경 (다수 가능)
 
 // 치즈 선택시 버튼 변경
-var breadLinks = document.querySelectorAll(".select3");
+var breadLinks = document.querySelectorAll(".select4");
 
 function CheeseSelect() {
-  var activeMenu =
-    document.querySelector(
-      ".cheese"
-    ); /* querySelector 자체가 dom을 다 뒤져야 되므로 이것도 비효율적이라고 할 수 ㅇ..dom에 의존적 */
-  if (activeMenu) {
-    activeMenu.classList.remove("cheese");
+  var CheeseMenu = document.querySelector(".cheese");
+  if (CheeseMenu) {
+    CheeseMenu.classList.remove("cheese");
   }
   this.classList.add("cheese");
 }
