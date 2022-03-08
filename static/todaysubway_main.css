@@ -29,3 +29,13 @@
             width: 30vw;
             cursor: pointer;
         }
+
+        .img-share{
+            width: 4vw;
+        }
+
+        .btn-share{
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
