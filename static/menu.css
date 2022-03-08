@@ -53,6 +53,7 @@ body {
   font-weight: 900;
 }
 .tab {
+  margin-top: 1vw;
   width: 80vw;
   height: 5vw;
 }
@@ -178,6 +179,10 @@ body {
   background-color: red;
 }
 /* 치즈 버튼 누르면 선택 표시 */
+.sauce {
+  background-color: red;
+}
+/* 치즈 버튼 누르면 선택 표시 */
 .cheese {
   background-color: red;
 }
@@ -207,22 +212,25 @@ body {
 .firstimg::after {
   content: "";
 }
-
+span {
+  display: block;
+  margin: auto;
+}
 .top {
   position: absolute;
-  display: block;
+  color: rgb(255, 202, 8);
   bottom: 150%;
-  /* left: 10vw; */
-  margin: auto;
   font-size: 1vw;
-  font-weight: 500;
+  margin: auto;
+  width: 100%;
   text-align: center;
   transition: all 0.7s;
 }
 
 .firstimg:hover .top {
-  bottom: 50%;
+  bottom: 40%;
   transition: all 0.7s;
+  margin: auto;
 }
 
 span {
