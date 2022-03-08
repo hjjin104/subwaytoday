@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>오늘의 Subway, 나만의 꿀조합</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../static/todaysubway_list_recent.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <script src="../static/todaysubway_list_recent.js"></script>
+
+    <div class="bg">
+        <!--   상단 로고 & new btn -->
+        <div style="position:relative;" class="logo-box">
+            <button style="position:absolute; left: calc(50vw - 18.6375vh); " class="btn-logo" id="btn-logo" type="submit">
+                <img
+                        class="logo"
+                        src="https://drive.google.com/uc?id=1QmRgyO-K9wb40ifclihR7kkpS9Fl-3ij"
+                />
+            </button>
+
+            <button
+                    style="position: absolute; bottom: 2vw; left: calc(51vw + 18.6375vmax);"
+                    class="btn-top10"
+                    id="btn-new"
+                    type="submit"
+            >
+                <img
+                        class="img-new"
+                        src="https://drive.google.com/uc?id=1M6H_SB7yw1x-x5GZaFjJXS5oPFmsnq7e"/>
+            </button>
+
+        </div>
+
+        <!--   인기순/최신순 btn-->
+        <div class="btn-box" style="position: relative;">
+            <button
+                    style="position: absolute; top: 1.942vw; left: 25vw;"
+                    class="btn-top10"
+                    id="btn-top10"
+                    type="submit"
+            >
+                <img
+                        class="img-top10"
+                        src="https://drive.google.com/uc?id=1MViZ4IKNIkBlY_L1_jYaYgrViGHIf5xi"/>
+            </button>
+
+            <button
+                    style="position: absolute; top: 1.942vw; left: 51vw;"
+                    class="btn-top10"
+                    id="btn-recent"
+                    type="submit"
+            >
+                <img
+                        class="img-recent"
+                        src="https://drive.google.com/uc?id=1rNaJ5cMVH-sNz3SSiTDHXEQQjIuSiinA"/>
+            </button>
+
+
+
+
+        </div>
+
+        <!--   본문 노란박스-->
+        <div class="yellow-box" style="position: relative;">
+
+
+        <!--   검색창-->
+            <div style="position: absolute; right: 4vw; top: 2vw">
+                <img class="search-img" src="https://drive.google.com/uc?id=15n1Yinqu71wroZGEPD7Eqow-gJv4spal"/>
+            </div>
+
+            <div style="position: absolute; right: 13vw; top: 2.4vw"">
+                <input id="search-input" class="search-input" type = "text">
+            </div>
+
+            <button style="position: absolute; right: 4vw; top: 2vw" id="search-btn" class="search-btn" type="submit"></button>
+
+
+
+
+            <!--   카드 간격: top: 전카드 + 29 -->
+            <div class="white-cards" style="position: absolute; top: 8vw; left: 4vw;">
+
+                <!--   바 -->
+                <div style="position: absolute; left: 32vw; top: 5vw">
+                    <img
+                            class="bar-bread"
+                            id="bar-bread"
+                            src="https://drive.google.com/uc?id=11X3DD4jXWBJqg5lp-qdYaDb8L7wFyOeu"
+                    />
+                </div>
+                <div style="position: absolute; left: 32.5vw; top: 11vw">
+                    <img
+                            class="bar-sauce"
+                            id="bar-sauce"
+                            src="https://drive.google.com/uc?id=1xgMJMT19UtQnUmG96rKRvSOjFwJX4kOt"
+                    />
+                </div>
+                <div style="position: absolute; left: 32.5vw; top: 15vw">
+                    <img
+                            class="bar-cheese"
+                            id="bar-cheese"
+                            src="https://drive.google.com/uc?id=1UmUNlUiUlHS6l1RxTEHImZwlBogi_olA"
+                    />
+                </div>
+
+                <!--   샌드위치 -->
+
+                <div
+                        id="menu"
+                        class="name-div"
+                        style="position: absolute; left: 6.2vw; top: 2vw"
+                >
+                    <span class="name">엄청엄청나게짱긴샌드위치</span>
+                </div>
+                <div
+                        id="bread"
+                        style="
+              position: absolute;
+              left: 43vw;
+              top: 4.6vw;
+              font-size: 2vw;
+              font-weight: bold;
+            "
+                >
+                    플랫브래드
+                </div>
+                <div
+                        id="sauce"
+                        style="
+              position: absolute;
+              left: 44.5vw;
+              top: 10.7vw;
+              font-size: 1.8vw;
+              font-weight: bold;
+            "
+                >
+                    스위트 칠리, 허니머스타드
+                </div>
+                <div
+                        id="cheese"
+                        style="
+              position: absolute;
+              left: 41.3vw;
+              top: 16vw;
+              font-size: 2vw;
+              font-weight: bold;
+            "
+                >
+                    아메리칸 치즈
+                </div>
+                <div style="position: absolute; left: 6vw; top: 1vw">
+                    <img
+                            class="img-sdw"
+                            id="img-sdw"
+                            src="https://www.subway.co.kr/upload/menu/%EC%95%B1%EC%9A%A9_%EB%A1%9C%ED%8B%B0%EC%84%B8%EB%A6%AC_%EB%B0%94%EB%B9%84%ED%81%90_%EC%B9%98%ED%82%A8_%EC%95%84%EB%B3%B4%EC%B9%B4%EB%8F%84_15cm_%EB%8B%A8%ED%92%88_20220228055941893.png"
+                    />
+                </div>
+
+                <!--   칼로리 -->
+
+                <div style="position: absolute; left: 5.2vw; top: 13vw">
+                    <img
+                            class="kcal"
+                            src="https://drive.google.com/uc?id=19qeR0F8hoSlvnYKefzSjy8Cj3ouY2Tkp"
+                    />
+                </div>
+
+                <div
+                        id="txt-kcal"
+                        style="
+              position: absolute;
+              left: 6vw;
+              top: 15.5vw;
+              font-size: 1.4vw;
+              font-weight: bold;
+            "
+                >
+                    456kcal
+                </div>
+
+                <!--   팁박스 -->
+
+                <div style="position: absolute; left: 4.5vw;  top: 20vw; z-index: +2;">
+                    <img
+                            class="img-tip"
+                            src="https://drive.google.com/uc?id=1G5_vQiPjjTp_I5aMpe8ZZ5ITvSmIAqPU"
+                    />
+                </div>
+
+                <div class="input-tip" style="position: absolute; left: 8vw; top: 22vw; z-index: +1;">
+                </div>
+
+                <div id="input-tip" class="input-tip2" style="position: absolute; left: 8.5vw; top: 22.7vw; z-index: +1">
+                    <span>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육</span></div>
+
+                <button
+                        style="position: absolute; top: 20vw; left: 65vw;"
+                        class="btn-top10"
+                        id="btn-like"
+                        type="submit"
+                >
+                    <img
+                            class="img-like"
+                            src="https://drive.google.com/uc?id=1DpuLAgFekl6djt-tXoVtn0yGzfTQFYUk"/>
+
+                </button>
+
+                <div class="nb-like"
+                     style="position: absolute; top: 21.6vw; left: 68vw; z-index: +1">
+                    <span id="nb-like">132</span></div>
+
+
+
+
+            </div>
+            <div class="white-cards" style="position: absolute; top: 37vw; left: 4vw;">
+
+                <!--   바 -->
+                <div style="position: absolute; left: 32vw; top: 5vw">
+                    <img
+                            class="bar-bread"
+                            id="bar-bread"
+                            src="https://drive.google.com/uc?id=11X3DD4jXWBJqg5lp-qdYaDb8L7wFyOeu"
+                    />
+                </div>
+                <div style="position: absolute; left: 32.5vw; top: 11vw">
+                    <img
+                            class="bar-sauce"
+                            id="bar-sauce"
+                            src="https://drive.google.com/uc?id=1xgMJMT19UtQnUmG96rKRvSOjFwJX4kOt"
+                    />
+                </div>
+                <div style="position: absolute; left: 32.5vw; top: 15vw">
+                    <img
+                            class="bar-cheese"
+                            id="bar-cheese"
+                            src="https://drive.google.com/uc?id=1UmUNlUiUlHS6l1RxTEHImZwlBogi_olA"
+                    />
+                </div>
+
+                <!--   샌드위치 -->
+
+                <div
+                        id="menu"
+                        class="name-div"
+                        style="position: absolute; left: 6.2vw; top: 2vw"
+                >
+                    <span class="name">적당한 샌드위치</span>
+                </div>
+                <div
+                        id="bread"
+                        style="
+              position: absolute;
+              left: 43vw;
+              top: 4.6vw;
+              font-size: 2vw;
+              font-weight: bold;
+            "
+                >
+                    플랫브래드
+                </div>
+                <div
+                        id="sauce"
+                        style="
+              position: absolute;
+              left: 44.5vw;
+              top: 10.7vw;
+              font-size: 1.8vw;
+              font-weight: bold;
+            "
+                >
+                    스위트 칠리, 허니머스타드
+                </div>
+                <div
+                        id="cheese"
+                        style="
+              position: absolute;
+              left: 41.3vw;
+              top: 16vw;
+              font-size: 2vw;
+              font-weight: bold;
+            "
+                >
+                    아메리칸 치즈
+                </div>
+                <div style="position: absolute; left: 6vw; top: 1vw">
+                    <img
+                            class="img-sdw"
+                            id="img-sdw"
+                            src="https://www.subway.co.kr/upload/menu/%EC%95%B1%EC%9A%A9_%EB%A1%9C%ED%8B%B0%EC%84%B8%EB%A6%AC_%EB%B0%94%EB%B9%84%ED%81%90_%EC%B9%98%ED%82%A8_%EC%95%84%EB%B3%B4%EC%B9%B4%EB%8F%84_15cm_%EB%8B%A8%ED%92%88_20220228055941893.png"
+                    />
+                </div>
+
+                <!--   칼로리 -->
+
+                <div style="position: absolute; left: 5.2vw; top: 13vw">
+                    <img
+                            class="kcal"
+                            src="https://drive.google.com/uc?id=19qeR0F8hoSlvnYKefzSjy8Cj3ouY2Tkp"
+                    />
+                </div>
+
+                <div
+                        id="txt-kcal"
+                        style="
+              position: absolute;
+              left: 6vw;
+              top: 15.5vw;
+              font-size: 1.4vw;
+              font-weight: bold;
+            "
+                >
+                    456kcal
+                </div>
+
+                <!--   팁박스 -->
+
+                <div style="position: absolute; left: 4.5vw;  top: 20vw; z-index: +2;">
+                    <img
+                            class="img-tip"
+                            src="https://drive.google.com/uc?id=1G5_vQiPjjTp_I5aMpe8ZZ5ITvSmIAqPU"
+                    />
+                </div>
+
+                <div class="input-tip" style="position: absolute; left: 8vw; top: 22vw; z-index: +1;">
+                </div>
+
+                <div id="input-tip" class="input-tip2" style="position: absolute; left: 8.5vw; top: 22.7vw; z-index: +1">
+                    <span>짧은 팁</span></div>
+
+                <button
+                        style="position: absolute; top: 20vw; left: 65vw;"
+                        class="btn-top10"
+                        id="btn-like"
+                        type="submit"
+                >
+                    <img
+                            class="img-like"
+                            src="https://drive.google.com/uc?id=1DpuLAgFekl6djt-tXoVtn0yGzfTQFYUk"/>
+
+                </button>
+
+                <div class="nb-like"
+                     style="position: absolute; top: 21.6vw; left: 68vw; z-index: +1">
+                    <span id="nb-like">132</span></div>
+            </div>
+            <div class="white-cards" style="position: absolute; top: 66vw; left: 4vw;">
+                <!--   바 -->
+                <div style="position: absolute; left: 32vw; top: 5vw">
+                    <img
+                            class="bar-bread"
+                            id="bar-bread"
+                            src="https://drive.google.com/uc?id=11X3DD4jXWBJqg5lp-qdYaDb8L7wFyOeu"
+                    />
+                </div>
+                <div style="position: absolute; left: 32.5vw; top: 11vw">
+                    <img
+                            class="bar-sauce"
+                            id="bar-sauce"
+                            src="https://drive.google.com/uc?id=1xgMJMT19UtQnUmG96rKRvSOjFwJX4kOt"
+                    />
+                </div>
+                <div style="position: absolute; left: 32.5vw; top: 15vw">
+                    <img
+                            class="bar-cheese"
+                            id="bar-cheese"
+                            src="https://drive.google.com/uc?id=1UmUNlUiUlHS6l1RxTEHImZwlBogi_olA"
+                    />
+                </div>
+
+                <!--   샌드위치 -->
+
+                <div
+                        id="menu"
+                        class="name-div"
+                        style="position: absolute; left: 6.2vw; top: 2vw"
+                >
+                    <span class="name">엄청엄청나게짱긴샌드위치</span>
+                </div>
+                <div
+                        id="bread"
+                        style="
+              position: absolute;
+              left: 43vw;
+              top: 4.6vw;
+              font-size: 2vw;
+              font-weight: bold;
+            "
+                >
+                    플랫브래드
+                </div>
+                <div
+                        id="sauce"
+                        style="
+              position: absolute;
+              left: 44.5vw;
+              top: 10.7vw;
+              font-size: 1.8vw;
+              font-weight: bold;
+            "
+                >
+                    스위트 칠리, 허니머스타드
+                </div>
+                <div
+                        id="cheese"
+                        style="
+              position: absolute;
+              left: 41.3vw;
+              top: 16vw;
+              font-size: 2vw;
+              font-weight: bold;
+            "
+                >
+                    아메리칸 치즈
+                </div>
+                <div style="position: absolute; left: 6vw; top: 1vw">
+                    <img
+                            class="img-sdw"
+                            id="img-sdw"
+                            src="https://www.subway.co.kr/upload/menu/%EC%95%B1%EC%9A%A9_%EB%A1%9C%ED%8B%B0%EC%84%B8%EB%A6%AC_%EB%B0%94%EB%B9%84%ED%81%90_%EC%B9%98%ED%82%A8_%EC%95%84%EB%B3%B4%EC%B9%B4%EB%8F%84_15cm_%EB%8B%A8%ED%92%88_20220228055941893.png"
+                    />
+                </div>
+
+                <!--   칼로리 -->
+
+                <div style="position: absolute; left: 5.2vw; top: 13vw">
+                    <img
+                            class="kcal"
+                            src="https://drive.google.com/uc?id=19qeR0F8hoSlvnYKefzSjy8Cj3ouY2Tkp"
+                    />
+                </div>
+
+                <div
+                        id="txt-kcal"
+                        style="
+              position: absolute;
+              left: 6vw;
+              top: 15.5vw;
+              font-size: 1.4vw;
+              font-weight: bold;
+            "
+                >
+                    456kcal
+                </div>
+
+                <!--   팁박스 -->
+
+                <div style="position: absolute; left: 4.5vw;  top: 20vw; z-index: +2;">
+                    <img
+                            class="img-tip"
+                            src="https://drive.google.com/uc?id=1G5_vQiPjjTp_I5aMpe8ZZ5ITvSmIAqPU"
+                    />
+                </div>
+
+                <div class="input-tip" style="position: absolute; left: 8vw; top: 22vw; z-index: +1;">
+                </div>
+
+                <div id="input-tip" class="input-tip2" style="position: absolute; left: 8.5vw; top: 22.7vw; z-index: +1">
+                    <span>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육</span></div>
+
+                <button
+                        style="position: absolute; top: 20vw; left: 65vw;"
+                        class="btn-top10"
+                        id="btn-like"
+                        type="submit"
+                >
+                    <img
+                            class="img-like"
+                            src="https://drive.google.com/uc?id=1DpuLAgFekl6djt-tXoVtn0yGzfTQFYUk"/>
+
+                </button>
+
+                <div class="nb-like"
+                     style="position: absolute; top: 21.6vw; left: 68vw; z-index: +1">
+                    <span id="nb-like">132</span></div>
+            </div>
+            <div class="white-cards" style="position: absolute; top: 95vw; left: 4vw;">
+
+                <!--   바 -->
+                <div style="position: absolute; left: 32vw; top: 5vw">
+                    <img
+                            class="bar-bread"
+                            id="bar-bread"
+                            src="https://drive.google.com/uc?id=11X3DD4jXWBJqg5lp-qdYaDb8L7wFyOeu"
+                    />
+                </div>
+                <div style="position: absolute; left: 32.5vw; top: 11vw">
+                    <img
+                            class="bar-sauce"
+                            id="bar-sauce"
+                            src="https://drive.google.com/uc?id=1xgMJMT19UtQnUmG96rKRvSOjFwJX4kOt"
+                    />
+                </div>
+                <div style="position: absolute; left: 32.5vw; top: 15vw">
+                    <img
+                            class="bar-cheese"
+                            id="bar-cheese"
+                            src="https://drive.google.com/uc?id=1UmUNlUiUlHS6l1RxTEHImZwlBogi_olA"
+                    />
+                </div>
+
+                <!--   샌드위치 -->
+
+                <div
+                        id="menu"
+                        class="name-div"
+                        style="position: absolute; left: 6.2vw; top: 2vw"
+                >
+                    <span class="name">엄청엄청나게짱긴샌드위치</span>
+                </div>
+                <div
+                        id="bread"
+                        style="
+              position: absolute;
+              left: 43vw;
+              top: 4.6vw;
+              font-size: 2vw;
+              font-weight: bold;
+            "
+                >
+                    플랫브래드
+                </div>
+                <div
+                        id="sauce"
+                        style="
+              position: absolute;
+              left: 44.5vw;
+              top: 10.7vw;
+              font-size: 1.8vw;
+              font-weight: bold;
+            "
+                >
+                    스위트 칠리, 허니머스타드
+                </div>
+                <div
+                        id="cheese"
+                        style="
+              position: absolute;
+              left: 41.3vw;
+              top: 16vw;
+              font-size: 2vw;
+              font-weight: bold;
+            "
+                >
+                    아메리칸 치즈
+                </div>
+                <div style="position: absolute; left: 6vw; top: 1vw">
+                    <img
+                            class="img-sdw"
+                            id="img-sdw"
+                            src="https://www.subway.co.kr/upload/menu/%EC%95%B1%EC%9A%A9_%EB%A1%9C%ED%8B%B0%EC%84%B8%EB%A6%AC_%EB%B0%94%EB%B9%84%ED%81%90_%EC%B9%98%ED%82%A8_%EC%95%84%EB%B3%B4%EC%B9%B4%EB%8F%84_15cm_%EB%8B%A8%ED%92%88_20220228055941893.png"
+                    />
+                </div>
+
+                <!--   칼로리 -->
+
+                <div style="position: absolute; left: 5.2vw; top: 13vw">
+                    <img
+                            class="kcal"
+                            src="https://drive.google.com/uc?id=19qeR0F8hoSlvnYKefzSjy8Cj3ouY2Tkp"
+                    />
+                </div>
+
+                <div
+                        id="txt-kcal"
+                        style="
+              position: absolute;
+              left: 6vw;
+              top: 15.5vw;
+              font-size: 1.4vw;
+              font-weight: bold;
+            "
+                >
+                    456kcal
+                </div>
+
+                <!--   팁박스 -->
+
+                <div style="position: absolute; left: 4.5vw;  top: 20vw; z-index: +2;">
+                    <img
+                            class="img-tip"
+                            src="https://drive.google.com/uc?id=1G5_vQiPjjTp_I5aMpe8ZZ5ITvSmIAqPU"
+                    />
+                </div>
+
+                <div class="input-tip" style="position: absolute; left: 8vw; top: 22vw; z-index: +1;">
+                </div>
+
+                <div id="input-tip" class="input-tip2" style="position: absolute; left: 8.5vw; top: 22.7vw; z-index: +1">
+                    <span>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육</span></div>
+
+                <button
+                        style="position: absolute; top: 20vw; left: 65vw;"
+                        class="btn-top10"
+                        id="btn-like"
+                        type="submit"
+                >
+                    <img
+                            class="img-like"
+                            src="https://drive.google.com/uc?id=1DpuLAgFekl6djt-tXoVtn0yGzfTQFYUk"/>
+
+                </button>
+
+                <div class="nb-like"
+                     style="position: absolute; top: 21.6vw; left: 68vw; z-index: +1">
+                    <span id="nb-like">132</span></div>
+            </div>
+            <div class="white-cards" style="position: absolute; top: 124vw; left: 4vw;">
+
+                <!--   바 -->
+                <div style="position: absolute; left: 32vw; top: 5vw">
+                    <img
+                            class="bar-bread"
+                            id="bar-bread"
+                            src="https://drive.google.com/uc?id=11X3DD4jXWBJqg5lp-qdYaDb8L7wFyOeu"
+                    />
+                </div>
+                <div style="position: absolute; left: 32.5vw; top: 11vw">
+                    <img
+                            class="bar-sauce"
+                            id="bar-sauce"
+                            src="https://drive.google.com/uc?id=1xgMJMT19UtQnUmG96rKRvSOjFwJX4kOt"
+                    />
+                </div>
+                <div style="position: absolute; left: 32.5vw; top: 15vw">
+                    <img
+                            class="bar-cheese"
+                            id="bar-cheese"
+                            src="https://drive.google.com/uc?id=1UmUNlUiUlHS6l1RxTEHImZwlBogi_olA"
+                    />
+                </div>
+
+                <!--   샌드위치 -->
+
+                <div
+                        id="menu"
+                        class="name-div"
+                        style="position: absolute; left: 6.2vw; top: 2vw"
+                >
+                    <span class="name">엄청엄청나게짱긴샌드위치</span>
+                </div>
+                <div
+                        id="bread"
+                        style="
+              position: absolute;
+              left: 43vw;
+              top: 4.6vw;
+              font-size: 2vw;
+              font-weight: bold;
+            "
+                >
+                    플랫브래드
+                </div>
+                <div
+                        id="sauce"
+                        style="
+              position: absolute;
+              left: 44.5vw;
+              top: 10.7vw;
+              font-size: 1.8vw;
+              font-weight: bold;
+            "
+                >
+                    스위트 칠리, 허니머스타드
+                </div>
+                <div
+                        id="cheese"
+                        style="
+              position: absolute;
+              left: 41.3vw;
+              top: 16vw;
+              font-size: 2vw;
+              font-weight: bold;
+            "
+                >
+                    아메리칸 치즈
+                </div>
+                <div style="position: absolute; left: 6vw; top: 1vw">
+                    <img
+                            class="img-sdw"
+                            id="img-sdw"
+                            src="https://www.subway.co.kr/upload/menu/%EC%95%B1%EC%9A%A9_%EB%A1%9C%ED%8B%B0%EC%84%B8%EB%A6%AC_%EB%B0%94%EB%B9%84%ED%81%90_%EC%B9%98%ED%82%A8_%EC%95%84%EB%B3%B4%EC%B9%B4%EB%8F%84_15cm_%EB%8B%A8%ED%92%88_20220228055941893.png"
+                    />
+                </div>
+
+                <!--   칼로리 -->
+
+                <div style="position: absolute; left: 5.2vw; top: 13vw">
+                    <img
+                            class="kcal"
+                            src="https://drive.google.com/uc?id=19qeR0F8hoSlvnYKefzSjy8Cj3ouY2Tkp"
+                    />
+                </div>
+
+                <div
+                        id="txt-kcal"
+                        style="
+              position: absolute;
+              left: 6vw;
+              top: 15.5vw;
+              font-size: 1.4vw;
+              font-weight: bold;
+            "
+                >
+                    456kcal
+                </div>
+
+                <!--   팁박스 -->
+
+                <div style="position: absolute; left: 4.5vw;  top: 20vw; z-index: +2;">
+                    <img
+                            class="img-tip"
+                            src="https://drive.google.com/uc?id=1G5_vQiPjjTp_I5aMpe8ZZ5ITvSmIAqPU"
+                    />
+                </div>
+
+                <div class="input-tip" style="position: absolute; left: 8vw; top: 22vw; z-index: +1;">
+                </div>
+
+                <div id="input-tip" class="input-tip2" style="position: absolute; left: 8.5vw; top: 22.7vw; z-index: +1">
+                    <span>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육</span></div>
+
+                <button
+                        style="position: absolute; top: 20vw; left: 65vw;"
+                        class="btn-top10"
+                        id="btn-like"
+                        type="submit"
+                >
+                    <img
+                            class="img-like"
+                            src="https://drive.google.com/uc?id=1DpuLAgFekl6djt-tXoVtn0yGzfTQFYUk"/>
+
+                </button>
+
+                <div class="nb-like"
+                     style="position: absolute; top: 21.6vw; left: 68vw; z-index: +1">
+                    <span id="nb-like">132</span></div>
+            </div>
+            <div class="white-cards" style="position: absolute; top: 153vw; left: 4vw;">
+
+                <!--   바 -->
+                <div style="position: absolute; left: 32vw; top: 5vw">
+                    <img
+                            class="bar-bread"
+                            id="bar-bread"
+                            src="https://drive.google.com/uc?id=11X3DD4jXWBJqg5lp-qdYaDb8L7wFyOeu"
+                    />
+                </div>
+                <div style="position: absolute; left: 32.5vw; top: 11vw">
+                    <img
+                            class="bar-sauce"
+                            id="bar-sauce"
+                            src="https://drive.google.com/uc?id=1xgMJMT19UtQnUmG96rKRvSOjFwJX4kOt"
+                    />
+                </div>
+                <div style="position: absolute; left: 32.5vw; top: 15vw">
+                    <img
+                            class="bar-cheese"
+                            id="bar-cheese"
+                            src="https://drive.google.com/uc?id=1UmUNlUiUlHS6l1RxTEHImZwlBogi_olA"
+                    />
+                </div>
+
+                <!--   샌드위치 -->
+
+                <div
+                        id="menu"
+                        class="name-div"
+                        style="position: absolute; left: 6.2vw; top: 2vw"
+                >
+                    <span class="name">엄청엄청나게짱긴샌드위치</span>
+                </div>
+                <div
+                        id="bread"
+                        style="
+              position: absolute;
+              left: 43vw;
+              top: 4.6vw;
+              font-size: 2vw;
+              font-weight: bold;
+            "
+                >
+                    플랫브래드
+                </div>
+                <div
+                        id="sauce"
+                        style="
+              position: absolute;
+              left: 44.5vw;
+              top: 10.7vw;
+              font-size: 1.8vw;
+              font-weight: bold;
+            "
+                >
+                    스위트 칠리, 허니머스타드
+                </div>
+                <div
+                        id="cheese"
+                        style="
+              position: absolute;
+              left: 41.3vw;
+              top: 16vw;
+              font-size: 2vw;
+              font-weight: bold;
+            "
+                >
+                    아메리칸 치즈
+                </div>
+                <div style="position: absolute; left: 6vw; top: 1vw">
+                    <img
+                            class="img-sdw"
+                            id="img-sdw"
+                            src="https://www.subway.co.kr/upload/menu/%EC%95%B1%EC%9A%A9_%EB%A1%9C%ED%8B%B0%EC%84%B8%EB%A6%AC_%EB%B0%94%EB%B9%84%ED%81%90_%EC%B9%98%ED%82%A8_%EC%95%84%EB%B3%B4%EC%B9%B4%EB%8F%84_15cm_%EB%8B%A8%ED%92%88_20220228055941893.png"
+                    />
+                </div>
+
+                <!--   칼로리 -->
+
+                <div style="position: absolute; left: 5.2vw; top: 13vw">
+                    <img
+                            class="kcal"
+                            src="https://drive.google.com/uc?id=19qeR0F8hoSlvnYKefzSjy8Cj3ouY2Tkp"
+                    />
+                </div>
+
+                <div
+                        id="txt-kcal"
+                        style="
+              position: absolute;
+              left: 6vw;
+              top: 15.5vw;
+              font-size: 1.4vw;
+              font-weight: bold;
+            "
+                >
+                    456kcal
+                </div>
+
+                <!--   팁박스 -->
+
+                <div style="position: absolute; left: 4.5vw;  top: 20vw; z-index: +2;">
+                    <img
+                            class="img-tip"
+                            src="https://drive.google.com/uc?id=1G5_vQiPjjTp_I5aMpe8ZZ5ITvSmIAqPU"
+                    />
+                </div>
+
+                <div class="input-tip" style="position: absolute; left: 8vw; top: 22vw; z-index: +1;">
+                </div>
+
+                <div id="input-tip" class="input-tip2" style="position: absolute; left: 8.5vw; top: 22.7vw; z-index: +1">
+                    <span>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육</span></div>
+
+                <button
+                        style="position: absolute; top: 20vw; left: 65vw;"
+                        class="btn-top10"
+                        id="btn-like"
+                        type="submit"
+                >
+                    <img
+                            class="img-like"
+                            src="https://drive.google.com/uc?id=1DpuLAgFekl6djt-tXoVtn0yGzfTQFYUk"/>
+
+                </button>
+
+                <div class="nb-like"
+                     style="position: absolute; top: 21.6vw; left: 68vw; z-index: +1">
+                    <span id="nb-like">132</span></div>
+            </div>
+            <div class="white-cards" style="position: absolute; top: 182vw; left: 4vw;">
+
+                <!--   바 -->
+                <div style="position: absolute; left: 32vw; top: 5vw">
+                    <img
+                            class="bar-bread"
+                            id="bar-bread"
+                            src="https://drive.google.com/uc?id=11X3DD4jXWBJqg5lp-qdYaDb8L7wFyOeu"
+                    />
+                </div>
+                <div style="position: absolute; left: 32.5vw; top: 11vw">
+                    <img
+                            class="bar-sauce"
+                            id="bar-sauce"
+                            src="https://drive.google.com/uc?id=1xgMJMT19UtQnUmG96rKRvSOjFwJX4kOt"
+                    />
+                </div>
+                <div style="position: absolute; left: 32.5vw; top: 15vw">
+                    <img
+                            class="bar-cheese"
+                            id="bar-cheese"
+                            src="https://drive.google.com/uc?id=1UmUNlUiUlHS6l1RxTEHImZwlBogi_olA"
+                    />
+                </div>
+
+                <!--   샌드위치 -->
+
+                <div
+                        id="menu"
+                        class="name-div"
+                        style="position: absolute; left: 6.2vw; top: 2vw"
+                >
+                    <span class="name">엄청엄청나게짱긴샌드위치</span>
+                </div>
+                <div
+                        id="bread"
+                        style="
+              position: absolute;
+              left: 43vw;
+              top: 4.6vw;
+              font-size: 2vw;
+              font-weight: bold;
+            "
+                >
+                    플랫브래드
+                </div>
+                <div
+                        id="sauce"
+                        style="
+              position: absolute;
+              left: 44.5vw;
+              top: 10.7vw;
+              font-size: 1.8vw;
+              font-weight: bold;
+            "
+                >
+                    스위트 칠리, 허니머스타드
+                </div>
+                <div
+                        id="cheese"
+                        style="
+              position: absolute;
+              left: 41.3vw;
+              top: 16vw;
+              font-size: 2vw;
+              font-weight: bold;
+            "
+                >
+                    아메리칸 치즈
+                </div>
+                <div style="position: absolute; left: 6vw; top: 1vw">
+                    <img
+                            class="img-sdw"
+                            id="img-sdw"
+                            src="https://www.subway.co.kr/upload/menu/%EC%95%B1%EC%9A%A9_%EB%A1%9C%ED%8B%B0%EC%84%B8%EB%A6%AC_%EB%B0%94%EB%B9%84%ED%81%90_%EC%B9%98%ED%82%A8_%EC%95%84%EB%B3%B4%EC%B9%B4%EB%8F%84_15cm_%EB%8B%A8%ED%92%88_20220228055941893.png"
+                    />
+                </div>
+
+                <!--   칼로리 -->
+
+                <div style="position: absolute; left: 5.2vw; top: 13vw">
+                    <img
+                            class="kcal"
+                            src="https://drive.google.com/uc?id=19qeR0F8hoSlvnYKefzSjy8Cj3ouY2Tkp"
+                    />
+                </div>
+
+                <div
+                        id="txt-kcal"
+                        style="
+              position: absolute;
+              left: 6vw;
+              top: 15.5vw;
+              font-size: 1.4vw;
+              font-weight: bold;
+            "
+                >
+                    456kcal
+                </div>
+
+                <!--   팁박스 -->
+
+                <div style="position: absolute; left: 4.5vw;  top: 20vw; z-index: +2;">
+                    <img
+                            class="img-tip"
+                            src="https://drive.google.com/uc?id=1G5_vQiPjjTp_I5aMpe8ZZ5ITvSmIAqPU"
+                    />
+                </div>
+
+                <div class="input-tip" style="position: absolute; left: 8vw; top: 22vw; z-index: +1;">
+                </div>
+
+                <div id="input-tip" class="input-tip2" style="position: absolute; left: 8.5vw; top: 22.7vw; z-index: +1">
+                    <span>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육</span></div>
+
+                <button
+                        style="position: absolute; top: 20vw; left: 65vw;"
+                        class="btn-top10"
+                        id="btn-like"
+                        type="submit"
+                >
+                    <img
+                            class="img-like"
+                            src="https://drive.google.com/uc?id=1DpuLAgFekl6djt-tXoVtn0yGzfTQFYUk"/>
+
+                </button>
+
+                <div class="nb-like"
+                     style="position: absolute; top: 21.6vw; left: 68vw; z-index: +1">
+                    <span id="nb-like">132</span></div>
+            </div>
+            <div class="white-cards" style="position: absolute; top: 211vw; left: 4vw;">
+
+                <!--   바 -->
+                <div style="position: absolute; left: 32vw; top: 5vw">
+                    <img
+                            class="bar-bread"
+                            id="bar-bread"
+                            src="https://drive.google.com/uc?id=11X3DD4jXWBJqg5lp-qdYaDb8L7wFyOeu"
+                    />
+                </div>
+                <div style="position: absolute; left: 32.5vw; top: 11vw">
+                    <img
+                            class="bar-sauce"
+                            id="bar-sauce"
+                            src="https://drive.google.com/uc?id=1xgMJMT19UtQnUmG96rKRvSOjFwJX4kOt"
+                    />
+                </div>
+                <div style="position: absolute; left: 32.5vw; top: 15vw">
+                    <img
+                            class="bar-cheese"
+                            id="bar-cheese"
+                            src="https://drive.google.com/uc?id=1UmUNlUiUlHS6l1RxTEHImZwlBogi_olA"
+                    />
+                </div>
+
+                <!--   샌드위치 -->
+
+                <div
+                        id="menu"
+                        class="name-div"
+                        style="position: absolute; left: 6.2vw; top: 2vw"
+                >
+                    <span class="name">엄청엄청나게짱긴샌드위치</span>
+                </div>
+                <div
+                        id="bread"
+                        style="
+              position: absolute;
+              left: 43vw;
+              top: 4.6vw;
+              font-size: 2vw;
+              font-weight: bold;
+            "
+                >
+                    플랫브래드
+                </div>
+                <div
+                        id="sauce"
+                        style="
+              position: absolute;
+              left: 44.5vw;
+              top: 10.7vw;
+              font-size: 1.8vw;
+              font-weight: bold;
+            "
+                >
+                    스위트 칠리, 허니머스타드
+                </div>
+                <div
+                        id="cheese"
+                        style="
+              position: absolute;
+              left: 41.3vw;
+              top: 16vw;
+              font-size: 2vw;
+              font-weight: bold;
+            "
+                >
+                    아메리칸 치즈
+                </div>
+                <div style="position: absolute; left: 6vw; top: 1vw">
+                    <img
+                            class="img-sdw"
+                            id="img-sdw"
+                            src="https://www.subway.co.kr/upload/menu/%EC%95%B1%EC%9A%A9_%EB%A1%9C%ED%8B%B0%EC%84%B8%EB%A6%AC_%EB%B0%94%EB%B9%84%ED%81%90_%EC%B9%98%ED%82%A8_%EC%95%84%EB%B3%B4%EC%B9%B4%EB%8F%84_15cm_%EB%8B%A8%ED%92%88_20220228055941893.png"
+                    />
+                </div>
+
+                <!--   칼로리 -->
+
+                <div style="position: absolute; left: 5.2vw; top: 13vw">
+                    <img
+                            class="kcal"
+                            src="https://drive.google.com/uc?id=19qeR0F8hoSlvnYKefzSjy8Cj3ouY2Tkp"
+                    />
+                </div>
+
+                <div
+                        id="txt-kcal"
+                        style="
+              position: absolute;
+              left: 6vw;
+              top: 15.5vw;
+              font-size: 1.4vw;
+              font-weight: bold;
+            "
+                >
+                    456kcal
+                </div>
+
+                <!--   팁박스 -->
+
+                <div style="position: absolute; left: 4.5vw;  top: 20vw; z-index: +2;">
+                    <img
+                            class="img-tip"
+                            src="https://drive.google.com/uc?id=1G5_vQiPjjTp_I5aMpe8ZZ5ITvSmIAqPU"
+                    />
+                </div>
+
+                <div class="input-tip" style="position: absolute; left: 8vw; top: 22vw; z-index: +1;">
+                </div>
+
+                <div id="input-tip" class="input-tip2" style="position: absolute; left: 8.5vw; top: 22.7vw; z-index: +1">
+                    <span>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육</span></div>
+
+                <button
+                        style="position: absolute; top: 20vw; left: 65vw;"
+                        class="btn-top10"
+                        id="btn-like"
+                        type="submit"
+                >
+                    <img
+                            class="img-like"
+                            src="https://drive.google.com/uc?id=1DpuLAgFekl6djt-tXoVtn0yGzfTQFYUk"/>
+
+                </button>
+
+                <div class="nb-like"
+                     style="position: absolute; top: 21.6vw; left: 68vw; z-index: +1">
+                    <span id="nb-like">132</span></div>
+            </div>
+            <div class="white-cards" style="position: absolute; top: 240vw; left: 4vw;">
+
+                <!--   바 -->
+                <div style="position: absolute; left: 32vw; top: 5vw">
+                    <img
+                            class="bar-bread"
+                            id="bar-bread"
+                            src="https://drive.google.com/uc?id=11X3DD4jXWBJqg5lp-qdYaDb8L7wFyOeu"
+                    />
+                </div>
+                <div style="position: absolute; left: 32.5vw; top: 11vw">
+                    <img
+                            class="bar-sauce"
+                            id="bar-sauce"
+                            src="https://drive.google.com/uc?id=1xgMJMT19UtQnUmG96rKRvSOjFwJX4kOt"
+                    />
+                </div>
+                <div style="position: absolute; left: 32.5vw; top: 15vw">
+                    <img
+                            class="bar-cheese"
+                            id="bar-cheese"
+                            src="https://drive.google.com/uc?id=1UmUNlUiUlHS6l1RxTEHImZwlBogi_olA"
+                    />
+                </div>
+
+                <!--   샌드위치 -->
+
+                <div
+                        id="menu"
+                        class="name-div"
+                        style="position: absolute; left: 6.2vw; top: 2vw"
+                >
+                    <span class="name">엄청엄청나게짱긴샌드위치</span>
+                </div>
+                <div
+                        id="bread"
+                        style="
+              position: absolute;
+              left: 43vw;
+              top: 4.6vw;
+              font-size: 2vw;
+              font-weight: bold;
+            "
+                >
+                    플랫브래드
+                </div>
+                <div
+                        id="sauce"
+                        style="
+              position: absolute;
+              left: 44.5vw;
+              top: 10.7vw;
+              font-size: 1.8vw;
+              font-weight: bold;
+            "
+                >
+                    스위트 칠리, 허니머스타드
+                </div>
+                <div
+                        id="cheese"
+                        style="
+              position: absolute;
+              left: 41.3vw;
+              top: 16vw;
+              font-size: 2vw;
+              font-weight: bold;
+            "
+                >
+                    아메리칸 치즈
+                </div>
+                <div style="position: absolute; left: 6vw; top: 1vw">
+                    <img
+                            class="img-sdw"
+                            id="img-sdw"
+                            src="https://www.subway.co.kr/upload/menu/%EC%95%B1%EC%9A%A9_%EB%A1%9C%ED%8B%B0%EC%84%B8%EB%A6%AC_%EB%B0%94%EB%B9%84%ED%81%90_%EC%B9%98%ED%82%A8_%EC%95%84%EB%B3%B4%EC%B9%B4%EB%8F%84_15cm_%EB%8B%A8%ED%92%88_20220228055941893.png"
+                    />
+                </div>
+
+                <!--   칼로리 -->
+
+                <div style="position: absolute; left: 5.2vw; top: 13vw">
+                    <img
+                            class="kcal"
+                            src="https://drive.google.com/uc?id=19qeR0F8hoSlvnYKefzSjy8Cj3ouY2Tkp"
+                    />
+                </div>
+
+                <div
+                        id="txt-kcal"
+                        style="
+              position: absolute;
+              left: 6vw;
+              top: 15.5vw;
+              font-size: 1.4vw;
+              font-weight: bold;
+            "
+                >
+                    456kcal
+                </div>
+
+                <!--   팁박스 -->
+
+                <div style="position: absolute; left: 4.5vw;  top: 20vw; z-index: +2;">
+                    <img
+                            class="img-tip"
+                            src="https://drive.google.com/uc?id=1G5_vQiPjjTp_I5aMpe8ZZ5ITvSmIAqPU"
+                    />
+                </div>
+
+                <div class="input-tip" style="position: absolute; left: 8vw; top: 22vw; z-index: +1;">
+                </div>
+
+                <div id="input-tip" class="input-tip2" style="position: absolute; left: 8.5vw; top: 22.7vw; z-index: +1">
+                    <span>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육</span></div>
+
+                <button
+                        style="position: absolute; top: 20vw; left: 65vw;"
+                        class="btn-top10"
+                        id="btn-like"
+                        type="submit"
+                >
+                    <img
+                            class="img-like"
+                            src="https://drive.google.com/uc?id=1DpuLAgFekl6djt-tXoVtn0yGzfTQFYUk"/>
+
+                </button>
+
+                <div class="nb-like"
+                     style="position: absolute; top: 21.6vw; left: 68vw; z-index: +1">
+                    <span id="nb-like">132</span></div>
+            </div>
+            <div class="white-cards" style="position: absolute; top: 269vw; left: 4vw;">
+
+                <!--   바 -->
+                <div style="position: absolute; left: 32vw; top: 5vw">
+                    <img
+                            class="bar-bread"
+                            id="bar-bread"
+                            src="https://drive.google.com/uc?id=11X3DD4jXWBJqg5lp-qdYaDb8L7wFyOeu"
+                    />
+                </div>
+                <div style="position: absolute; left: 32.5vw; top: 11vw">
+                    <img
+                            class="bar-sauce"
+                            id="bar-sauce"
+                            src="https://drive.google.com/uc?id=1xgMJMT19UtQnUmG96rKRvSOjFwJX4kOt"
+                    />
+                </div>
+                <div style="position: absolute; left: 32.5vw; top: 15vw">
+                    <img
+                            class="bar-cheese"
+                            id="bar-cheese"
+                            src="https://drive.google.com/uc?id=1UmUNlUiUlHS6l1RxTEHImZwlBogi_olA"
+                    />
+                </div>
+
+                <!--   샌드위치 -->
+
+                <div
+                        id="menu"
+                        class="name-div"
+                        style="position: absolute; left: 6.2vw; top: 2vw"
+                >
+                    <span class="name">엄청엄청나게짱긴샌드위치</span>
+                </div>
+                <div
+                        id="bread"
+                        style="
+              position: absolute;
+              left: 43vw;
+              top: 4.6vw;
+              font-size: 2vw;
+              font-weight: bold;
+            "
+                >
+                    플랫브래드
+                </div>
+                <div
+                        id="sauce"
+                        style="
+              position: absolute;
+              left: 44.5vw;
+              top: 10.7vw;
+              font-size: 1.8vw;
+              font-weight: bold;
+            "
+                >
+                    스위트 칠리, 허니머스타드
+                </div>
+                <div
+                        id="cheese"
+                        style="
+              position: absolute;
+              left: 41.3vw;
+              top: 16vw;
+              font-size: 2vw;
+              font-weight: bold;
+            "
+                >
+                    아메리칸 치즈
+                </div>
+                <div style="position: absolute; left: 6vw; top: 1vw">
+                    <img
+                            class="img-sdw"
+                            id="img-sdw"
+                            src="https://www.subway.co.kr/upload/menu/%EC%95%B1%EC%9A%A9_%EB%A1%9C%ED%8B%B0%EC%84%B8%EB%A6%AC_%EB%B0%94%EB%B9%84%ED%81%90_%EC%B9%98%ED%82%A8_%EC%95%84%EB%B3%B4%EC%B9%B4%EB%8F%84_15cm_%EB%8B%A8%ED%92%88_20220228055941893.png"
+                    />
+                </div>
+
+                <!--   칼로리 -->
+
+                <div style="position: absolute; left: 5.2vw; top: 13vw">
+                    <img
+                            class="kcal"
+                            src="https://drive.google.com/uc?id=19qeR0F8hoSlvnYKefzSjy8Cj3ouY2Tkp"
+                    />
+                </div>
+
+                <div
+                        id="txt-kcal"
+                        style="
+              position: absolute;
+              left: 6vw;
+              top: 15.5vw;
+              font-size: 1.4vw;
+              font-weight: bold;
+            "
+                >
+                    456kcal
+                </div>
+
+                <!--   팁박스 -->
+
+                <div style="position: absolute; left: 4.5vw;  top: 20vw; z-index: +2;">
+                    <img
+                            class="img-tip"
+                            src="https://drive.google.com/uc?id=1G5_vQiPjjTp_I5aMpe8ZZ5ITvSmIAqPU"
+                    />
+                </div>
+
+                <div class="input-tip" style="position: absolute; left: 8vw; top: 22vw; z-index: +1;">
+                </div>
+
+                <div id="input-tip" class="input-tip2" style="position: absolute; left: 8.5vw; top: 22.7vw; z-index: +1">
+                    <span>일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육</span></div>
+
+                <button
+                        style="position: absolute; top: 20vw; left: 65vw;"
+                        class="btn-top10"
+                        id="btn-like"
+                        type="submit"
+                >
+                    <img
+                            class="img-like"
+                            src="https://drive.google.com/uc?id=1DpuLAgFekl6djt-tXoVtn0yGzfTQFYUk"/>
+
+                </button>
+
+                <div class="nb-like"
+                     style="position: absolute; top: 21.6vw; left: 68vw; z-index: +1">
+                    <span id="nb-like">132</span></div>
+            </div>
+
+
+
+
+
+        </div>
+
+
+    </div>
+  </body>
+</html>
