@@ -15,7 +15,7 @@ function openTab(evt, tabName) {
 // 샌드위치 선택시 버튼 색 변경
 var sandwichLinks = document.querySelectorAll(".select");
 
-function MenuSelect() {
+function MenuSelect(main) {
   var SandwichMenu = document.querySelector(".sandwich");
   if (SandwichMenu) {
     SandwichMenu.classList.remove("sandwich");
@@ -59,3 +59,29 @@ for (var i = 0; i < cheeseLinks.length; i++) {
 }
 
 // 다 더해지는 값
+
+const submitButton = document.querySelector(".made");
+
+function gogo() {
+  const sandwich = document.querySelector(".sandwich").innerText;
+  const bread = document.querySelector(".bread").innerText;
+  const cheese = document.querySelector(".cheese").innerText;
+
+    $.ajax({
+      type: "POST",
+      url: "/menu",
+      data: {
+        sandwich_give: sandwich,
+        bread_give: bread,
+        cheese_give: cheese
+      },
+      success: function (response) { // 성공하면
+        if(response['result'] == 'success') {
+        alert(response['msg']);
+        window.location.reload()}
+      }
+    })
+  }
+
+submitButton.addEventListener("click", gogo)
+
