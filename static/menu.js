@@ -97,21 +97,12 @@ function gogo() {
     data: {
       sandwich_give: sandwich,
       bread_give: bread,
-<<<<<<< HEAD
-      cheese_give: cheese
-=======
       sauce_give: sauceArr,
       cheese_give: cheese,
->>>>>>> cd57e99e4dcdbc25d57513c6b701a747e1b4375d
     },
-    success: function (response) {
-      // 성공하면
+    success: function (response) {// 성공하면
       if (response["result"] == "success") {
         alert(response["msg"]);
-<<<<<<< HEAD
-=======
-        console.log(sandwich, bread, sauceArr, cheese)
->>>>>>> cd57e99e4dcdbc25d57513c6b701a747e1b4375d
       }
     },
   });

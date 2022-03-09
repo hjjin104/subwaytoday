@@ -5,11 +5,11 @@ from pymongo import MongoClient
 
 client = MongoClient('localhost', 27017)
 # client = MongoClient('mongodb://test:test@52.79.241.120', 27017)
-db = client.dbhappy
+db = client.dbhomework
 
 @app.route('/')
 def home():
-   return render_template('Home.html')
+   return render_template('todaysubway_main.html')
 
 @app.route('/menu')
 def menu():
