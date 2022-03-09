@@ -11,6 +11,10 @@ db = client.dbhomework
 def home():
    return render_template('todaysubway_main.html')
 
+@app.route('/show')
+def show():
+    return render_template('todaysubway_list_top10.html')
+
 @app.route('/menu')
 def menu():
     return render_template('menu.html')
