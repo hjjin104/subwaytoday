@@ -31,7 +31,7 @@ const popularSandwich = [
     like: 3,
   },
   {
-    name: "----",
+    name: "BLT",
     sauce: "스위트 어니언",
     cheese: "모짜렐라 치즈",
     kcal: "450kcal",
@@ -39,7 +39,7 @@ const popularSandwich = [
     like: 7,
   },
   {
-    name: "에그마요",
+    name: "BMT",
     sauce: "스모크 바비큐",
     cheese: "모짜렐라 치즈",
     kcal: "450kcal",
@@ -90,7 +90,7 @@ function popularList(val = "") {
             class="name-div"
             style="position: absolute; left: 4.5vw; top: 3vw"
           >
-            <span class="name">엄청엄청나게짱긴샌드위치</span>
+            <span class="name">${sandwich.name}</span>
           </div>
           <div
             id="bread"
