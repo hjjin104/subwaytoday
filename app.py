@@ -80,7 +80,7 @@ def menuPost():
     db.userchoice.insert_one(doc)
     return jsonify({'result': 'success', 'msg': '완료되었습니다!'})
 
-#mychoice data
+#mychoice data 내려주기
 @app.route('/menu', methods=['GET'])
 def all_mychoice ():
     mychoices = list(db.userchoice.find({}, {'_id': False}))
