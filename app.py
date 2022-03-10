@@ -86,7 +86,11 @@ def all_mychoice ():
     mychoices = list(db.userchoice.find({}, {'_id': False}))
     return jsonify({'all_mychoices': mychoices})
 
-
+#lastpage로 조합 내려주기
+@app.route('/check/check', methods=['GET'])
+def last_page():
+    mychoices = list(db.userchoice.find({}, {'_id': False}).sort("_id", -1).limit(1))
+    return jsonify({'all_mychoices': mychoices})
 
 
 #좋아요 api
