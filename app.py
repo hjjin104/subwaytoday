@@ -63,24 +63,27 @@ def all_cheese():
 # 유저가 선택한 주메뉴, 빵, 치즈, 소스 data를 db에 생성하는 API
 @app.route('/menu', methods=['POST'])
 def menuPost():
-    img_receive = request.form['img_give']
     sandwich_receive = request.form['sandwich_give']
     bread_receive = request.form['bread_give']
     sauce_receive = request.form.getlist('sauce_give')
     cheese_receive = request.form['cheese_give']
     # comment_receive = request.form['comment_give']
+    img_find = request.form['find_give']
+    user = db.a_sandwich.find_one({'name': img_find})['img']
 
     doc = {
-        'img': img_receive,
         'sandwich': sandwich_receive,
         'bread': bread_receive,
         'sauce': sauce_receive,
         'cheese': cheese_receive,
-        'comment': "본연의 맛을 즐기는게 최고!!",
+        'comment': "yujmyum",
+        'img': user,
         'like': 0
     }
+    print(user)
     db.userchoice.insert_one(doc)
     return jsonify({'result': 'success', 'msg': '완료되었습니다!'})
+
 
 #mychoice data 내려주기
 @app.route('/menu', methods=['GET'])
