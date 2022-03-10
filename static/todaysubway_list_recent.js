@@ -11,55 +11,235 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
 }
-
-// 최신순 리스트 함수
-const sandwich = [
+// 인기순 정렬 및 검색 기능
+const popularSandwich = [
   {
-    id: "menu01",
+    img: "https://www.subway.co.kr/upload/menu/Egg-Mayo_20211231094817112.png",
     name: "에그마요",
-    url: "img/에그마요.png",
-    date: new Date("2022-01-01"),
+    sauce: "스모크 바비큐",
+    cheese: "모짜렐라 치즈",
+    kcal: "450kcal",
+    tip: "아보카도를 넣어 먹으세요",
+    like: 5,
   },
   {
-    id: "menu02",
-    name: "비엠티",
-    url: "img/에그마요.png",
-    date: new Date("2022-01-04"),
+    name: "에그마요",
+    sauce: "핫칠리",
+    cheese: "모짜렐라 치즈",
+    kcal: "450kcal",
+    tip: "아보카도를 넣어 먹으세요",
+    like: 3,
+  },
+  {
+    name: "----",
+    sauce: "스위트 어니언",
+    cheese: "모짜렐라 치즈",
+    kcal: "450kcal",
+    tip: "아보카도를 넣어 먹으세요",
+    like: 7,
+  },
+  {
+    name: "에그마요",
+    sauce: "스모크 바비큐",
+    cheese: "모짜렐라 치즈",
+    kcal: "450kcal",
+    tip: "아보카도를 넣어 먹으세요",
+    like: 20,
   },
 ];
-// 최신순
-const recent = sandwich.sort((a, b) => {
-  return new Date(a.date) - new Date(b.date);
+const Pop = popularSandwich.sort(function (a, b) {
+  return b.like - a.like;
 });
 
-const list = document.getElementById("list");
+const PopularRank = Pop.splice(0, 10);
 
-function showList(val = "") {
-  list.innerHTML = "";
-  const res = sandwich.forEach((menu) => {
-    if (menu.name.includes(val)) {
+const popular = document.getElementById("popularSandwich");
+
+function popularList(val = "") {
+  popular.innerHTML = "";
+  const res = PopularRank.forEach((sandwich) => {
+    if (sandwich.name.includes(val)) {
       const li = document.createElement("li");
       li.innerHTML = `
-      <div class="new-sandwich">
-        ${sandwich.map(function (menu) {
-          return menu.name + menu.url;
-        })}
+      <div class="white-cards">
+        <div class="result-box" style="position: relative">
+          <div style="position: absolute; left: 33vw; top: 5vw">
+            <img
+              class="bar-bread"
+              id="bar-bread"
+              src="https://drive.google.com/uc?id=11X3DD4jXWBJqg5lp-qdYaDb8L7wFyOeu"
+            />
+          </div>
+          <div style="position: absolute; left: 34.5vw; top: 10.5vw">
+            <img
+              class="bar-sauce"
+              id="bar-sauce"
+              src="https://drive.google.com/uc?id=1xgMJMT19UtQnUmG96rKRvSOjFwJX4kOt"
+            />
+          </div>
+          <div style="position: absolute; left: 34vw; top: 15vw">
+            <img
+              class="bar-cheese"
+              id="bar-cheese"
+              src="https://drive.google.com/uc?id=1UmUNlUiUlHS6l1RxTEHImZwlBogi_olA"
+            />
+          </div>
+
+          <div
+            id="menu"
+            class="name-div"
+            style="position: absolute; left: 4.5vw; top: 3vw"
+          >
+            <span class="name">엄청엄청나게짱긴샌드위치</span>
+          </div>
+          <div
+            id="bread"
+            style="
+              position: absolute;
+              left: 45vw;
+              top: 4.4vw;
+              font-size: 2vw;
+              font-weight: bold;
+            "
+          >
+            플랫브래드
+          </div>
+          <div
+            id="sauce"
+            style="
+              position: absolute;
+              left: 47vw;
+              top: 10vw;
+              font-size: 1.8vw;
+              font-weight: bold;
+            "
+          >
+            스위트 칠리, 허니머스타드
+          </div>
+          <div
+            id="cheese"
+            style="
+              position: absolute;
+              left: 43.8vw;
+              top: 15.5vw;
+              font-size: 2vw;
+              font-weight: bold;
+            "
+          >
+            아메리칸 치즈
+          </div>
+          <div style="position: absolute; left: 5vw; top: 1vw">
+            <img
+              class="img-sdw"
+              id="img-sdw"
+              src="https://www.subway.co.kr/upload/menu/%EC%95%B1%EC%9A%A9_%EB%A1%9C%ED%8B%B0%EC%84%B8%EB%A6%AC_%EB%B0%94%EB%B9%84%ED%81%90_%EC%B9%98%ED%82%A8_%EC%95%84%EB%B3%B4%EC%B9%B4%EB%8F%84_15cm_%EB%8B%A8%ED%92%88_20220228055941893.png"
+            />
+          </div>
+
+          <div style="position: absolute; left: 4.2vw; top: 12vw">
+            <img
+                    class="kcal"
+                    src="https://drive.google.com/uc?id=19qeR0F8hoSlvnYKefzSjy8Cj3ouY2Tkp"
+            />
+          </div>
+
+          <div
+            id="txt-kcal"
+            style="
+              position: absolute;
+              left: 5vw;
+              top: 14.5vw;
+              font-size: 1.4vw;
+              font-weight: bold;
+            "
+          >
+            456kcal
+          </div>
+
+          <div style="position: absolute; left: 8vw; top: 19vw; z-index: +1;">
+            <img
+                    class="img-tip"
+                    src="https://drive.google.com/uc?id=1G5_vQiPjjTp_I5aMpe8ZZ5ITvSmIAqPU"
+            />
+          </div>
+
+          <div style="position: absolute; left: 11vw; top: 22vw">
+            <input
+                    id="input-tip"
+                    class="input-tip"
+                    type="text"
+                    placeholder=" 당신만의 추가 팁이 있다면?(25자이내)"
+            />
+          </div>
+        </div>
       </div>
-      `;
-      list.appendChild(li);
+        `;
+      popular.appendChild(li);
     }
   });
 }
+popularList();
 
-showList();
+const PopularSearchInput = document.getElementById("PopularSearch");
+const PopularSearchBtn = document.getElementById("PopularBtn");
 
-// 검색 기능
-const searchInput = document.getElementById("search");
-const searchBtn = document.getElementById("searchBtn");
-
-searchBtn.addEventListener("click", function (e) {
+PopularSearchBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  const val = searchInput.value;
+  const val = PopularSearchInput.value;
   console.log(val);
-  showList(val);
+  popularList(val);
+});
+
+// 최선순 정렬
+const newSandwich = [
+  {
+    name: "에그마요",
+    like: 3,
+    date: "2020-01-02",
+  },
+  {
+    name: "미트볼",
+    like: 5,
+    date: "2020-01-04",
+  },
+  {
+    name: "로스트 치킨",
+    like: 20,
+    date: "2020-01-05",
+  },
+];
+const NewMake = newSandwich.sort(function (a, b) {
+  return new Date(b.date) - new Date(a.date);
+});
+
+const NewMaking = NewMake.splice(0, 10);
+
+const newdate = document.getElementById("newSandwich");
+
+function newList(val = "") {
+  newdate.innerHTML = "";
+  const res = NewMaking.forEach((NewSandwich) => {
+    if (NewSandwich.name.includes(val)) {
+      const li = document.createElement("li");
+      li.innerHTML = `
+      <div class="white-cards">
+        <p>좋아요 : ${NewSandwich.like}</p>
+        <p>이름 : ${NewSandwich.name}</p>
+      </div>
+        
+      `;
+      newdate.appendChild(li);
+    }
+  });
+}
+newList();
+
+const NewSearchInput = document.getElementById("NewSearch");
+const NewSearchBtn = document.getElementById("NewBtn");
+
+NewSearchBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  const val = NewSearchInput.value;
+  console.log(val);
+  newList(val);
 });
