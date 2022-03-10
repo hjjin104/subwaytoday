@@ -88,7 +88,7 @@ function gogo() {
     sauceArr.push(sauces);
   }
 
-  console.log(sauceArr);
+  console.log(sandwich,bread,cheese,sauceArr);
 
   $.ajax({
     type: "POST",
