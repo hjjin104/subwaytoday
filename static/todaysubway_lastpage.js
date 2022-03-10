@@ -109,15 +109,6 @@
             />
           </div>
 
-          <!--   칼로리 -->
-
-          <div style="position: absolute; left: 7.2vw; top: 21vw">
-            <img
-                    class="kcal"
-                    src="https://drive.google.com/uc?id=19qeR0F8hoSlvnYKefzSjy8Cj3ouY2Tkp"
-            />
-          </div>
-
 
           <!--   팁박스 -->
 
