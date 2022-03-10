@@ -77,6 +77,7 @@ const submitButton = document.querySelector("#NextPage");
 
 function gogo() {
   let sauceArr = [];
+  let img = $('.sandwichimg').attributes('src');
   const sandwich = document.querySelector(".sandwich").innerText;
   const bread = document.querySelector(".bread").innerText;
   const cheese = document.querySelector(".cheese").innerText;
@@ -94,6 +95,7 @@ function gogo() {
     url: "/menu",
     traditional: true,
     data: {
+      img_give: img,
       sandwich_give: sandwich,
       bread_give: bread,
       sauce_give: sauceArr,
@@ -107,7 +109,6 @@ function gogo() {
     },
   });
 }
-
 submitButton.addEventListener("click", gogo);
 
 //크롤링한 값

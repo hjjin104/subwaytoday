@@ -63,6 +63,7 @@ def all_cheese():
 # 유저가 선택한 주메뉴, 빵, 치즈, 소스 data를 db에 생성하는 API
 @app.route('/menu', methods=['POST'])
 def menuPost():
+    img_receive = request.form['img_give']
     sandwich_receive = request.form['sandwich_give']
     bread_receive = request.form['bread_give']
     sauce_receive = request.form.getlist('sauce_give')
@@ -70,6 +71,7 @@ def menuPost():
     comment_receive = request.form['comment_give']
 
     doc = {
+        'img': img_receive,
         'sandwich': sandwich_receive,
         'bread': bread_receive,
         'sauce': sauce_receive,
