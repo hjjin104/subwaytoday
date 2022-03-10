@@ -36,7 +36,7 @@
   width: 35vw;
   height: 4.18vw;
 }
-
+/* 인기순 최신순 입력창 */
 .search-input {
   background-color: transparent;
   border: none;
@@ -44,7 +44,15 @@
   height: 3.2vw;
   font-size: 1.5vw;
 }
-
+.search-input2 {
+  background-color: transparent;
+  border: 1px solid black;
+  background-color: white;
+  width: 21vw;
+  height: 3.2vw;
+  font-size: 1.5vw;
+}
+/* 인기순 최신순 버튼 */
 .search-btn {
   background-color: transparent;
   width: 9vw;
@@ -52,8 +60,15 @@
   border: none;
   cursor: pointer;
 }
+.search-btn2 {
+  background-color: transparent;
+  border: 1px solid black;
+  width: 9vw;
+  height: 4vw;
+  cursor: pointer;
+}
 
-/*인기순/최신순 btn & new btn*/
+/* 인기순,최신순 btn & new btn */
 .btn-box {
   width: 100vw;
   height: 8vw;
@@ -94,17 +109,22 @@
   border-radius: 1vw;
 }
 
+/* 카드 내용 */
 .white-cards {
   background-color: white;
   width: 76vw;
   height: 28vw;
   border-radius: 2vw;
+  margin: auto;
+  margin-bottom: 1vw;
 }
 
 .bar-bread {
   width: 10vw;
 }
-
+.bar.img {
+  display: block;
+}
 .bar-sauce {
   width: 10.5vw;
 }
@@ -171,4 +191,29 @@
 
 .ranking {
   width: 7.5vw;
+}
+
+/* 최신순 리스트 */
+#newSandwich {
+  margin: 0px;
+  width: 100%;
+  /* text-align: center; */
+  margin: auto;
+  padding: 0px;
+  list-style-type: none;
+}
+#popularSandwich {
+  margin: 0px;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  padding: 0px;
+  list-style-type: none;
+}
+#search-form {
+  margin: auto;
+  text-align: right;
+}
+#Newsearch-form {
+  text-align: right;
 }
