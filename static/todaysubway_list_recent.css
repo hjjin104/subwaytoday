@@ -36,27 +36,32 @@
   width: 35vw;
   height: 4.18vw;
 }
-/* 인기순 최신순 입력창 */
+/* 인기순 최신순 검색창 */
+.container{
+  width: 84vw;
+  height: 8vw;
+}
+
 .search-input {
   background-color: transparent;
+  background-color: white;
   border: none;
   width: 21vw;
-  height: 3.2vw;
+  height: 5vw;
   font-size: 1.5vw;
 }
 .search-input2 {
   background-color: transparent;
   border: 1px solid black;
-  background-color: white;
-  width: 21vw;
-  height: 3.2vw;
+  width: 20vw;
+  height: 2.5vw;
   font-size: 1.5vw;
 }
 /* 인기순 최신순 버튼 */
 .search-btn {
   background-color: transparent;
-  width: 9vw;
-  height: 4vw;
+  width: 8vw;
+  height: 3.5vw;
   border: none;
   cursor: pointer;
 }

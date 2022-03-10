@@ -38,13 +38,19 @@
 
     <!--   본문 초록박스-->
     <div id="popular" class="tabcontent" style="display: block">
-      <div class="green-box" style="position: relative">
+      <div class="green-box">
         <!-- 검색창 -->
-        <section class="container">
-          <form id="search-form">
-            <input type="text" id="PopularSearch" class="search-btn">
-            <button id="PopularBtn" class="search-btn">검색</button>
+
+        <section class="container" style="position: relative">
+
+          <form id="search-form" style="position: absolute; z-index: +1; right: 4.5vw; top: 1vw;">
+            <input type="text" id="PopularSearch" class="search-input2">
+            <button id="PopularBtn" class="search-btn"></button>
           </form>
+
+          <div style="position: absolute; right: 4vw; top: 2vw">
+                <img class="search-img" src="https://drive.google.com/uc?id=1b9E3nGJ7WDhS5i3S8pj4nzbYnW33pmey"/>
+          </div>
 
         </section>
         <ul id="popularSandwich"></ul>
@@ -54,9 +60,9 @@
 
     <!--   본문 노란박스-->
     <div id="new" class="tabcontent" style="display: none">
-      <div class="yellow-box" style="position: relative;">
+      <div class="yellow-box" >
         <!-- 검색창 -->
-        <section class="container">
+        <section class="container"  >
           <form id="Newsearch-form">
             <input type="text" id="NewSearch" class="search-input2">
             <button id="NewBtn" class="search-btn2">검색</button>

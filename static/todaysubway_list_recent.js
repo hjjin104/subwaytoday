@@ -63,21 +63,21 @@ function popularList(val = "") {
       li.innerHTML = `
       <div class="white-cards">
         <div class="result-box" style="position: relative">
-          <div style="position: absolute; left: 33vw; top: 5vw">
+          <div style="position: absolute; left: 31vw; top: 5vw">
             <img
               class="bar-bread"
               id="bar-bread"
               src="https://drive.google.com/uc?id=11X3DD4jXWBJqg5lp-qdYaDb8L7wFyOeu"
             />
           </div>
-          <div style="position: absolute; left: 34.5vw; top: 10.5vw">
+          <div style="position: absolute; left: 32vw; top: 11vw">
             <img
               class="bar-sauce"
               id="bar-sauce"
               src="https://drive.google.com/uc?id=1xgMJMT19UtQnUmG96rKRvSOjFwJX4kOt"
             />
           </div>
-          <div style="position: absolute; left: 34vw; top: 15vw">
+          <div style="position: absolute; left: 31.5vw; top: 16vw">
             <img
               class="bar-cheese"
               id="bar-cheese"
@@ -96,7 +96,7 @@ function popularList(val = "") {
             id="bread"
             style="
               position: absolute;
-              left: 45vw;
+              left: 43vw;
               top: 4.4vw;
               font-size: 2vw;
               font-weight: bold;
@@ -108,8 +108,8 @@ function popularList(val = "") {
             id="sauce"
             style="
               position: absolute;
-              left: 47vw;
-              top: 10vw;
+              left: 45vw;
+              top: 11vw;
               font-size: 1.8vw;
               font-weight: bold;
             "
@@ -120,15 +120,15 @@ function popularList(val = "") {
             id="cheese"
             style="
               position: absolute;
-              left: 43.8vw;
-              top: 15.5vw;
+              left: 41vw;
+              top: 16.5vw;
               font-size: 2vw;
               font-weight: bold;
             "
           >
             아메리칸 치즈
           </div>
-          <div style="position: absolute; left: 5vw; top: 1vw">
+          <div style="position: absolute; left: 5vw; top: 2vw">
             <img
               class="img-sdw"
               id="img-sdw"
@@ -136,25 +136,9 @@ function popularList(val = "") {
             />
           </div>
 
-          <div style="position: absolute; left: 4.2vw; top: 12vw">
-            <img
-                    class="kcal"
-                    src="https://drive.google.com/uc?id=19qeR0F8hoSlvnYKefzSjy8Cj3ouY2Tkp"
-            />
-          </div>
+         
 
-          <div
-            id="txt-kcal"
-            style="
-              position: absolute;
-              left: 5vw;
-              top: 14.5vw;
-              font-size: 1.4vw;
-              font-weight: bold;
-            "
-          >
-            456kcal
-          </div>
+          
 
           <div style="position: absolute; left: 8vw; top: 19vw; z-index: +1;">
             <img
