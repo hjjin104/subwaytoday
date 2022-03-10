@@ -53,7 +53,7 @@ def all_sauce():
     sauces = list(db.a_sauce.find({}, {'_id': False}))
     return jsonify({'all_sauce': sauces})
 
-#menu-cheese api   
+#menu-cheese api
 @app.route('/api/list/cheese', methods=['GET'])
 def all_cheese():
     cheese = list(db.a_cheese.find({}, {'_id': False}))

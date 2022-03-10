@@ -121,7 +121,7 @@ submitButton.addEventListener("click", gogo);
         function showSandwiches() {
             $.ajax({
                 type: "GET",
-                url: "http://127.0.0.1:5000/api/list/sandwich",
+                url: "api/list/sandwich",
                 data: {},
                 success: function (response) {
                     let sandwiches = response['all_sandwich']
@@ -153,7 +153,7 @@ submitButton.addEventListener("click", gogo);
         function showBreads() {
             $.ajax({
                 type: "GET",
-                url: "http://127.0.0.1:5000/api/list/bread",
+                url: "api/list/bread",
                 data: {},
                 success: function (response) {
                     let breads = response['all_bread']
@@ -185,7 +185,7 @@ submitButton.addEventListener("click", gogo);
         function showSauces() {
             $.ajax({
                 type: "GET",
-                url: "http://127.0.0.1:5000/api/list/sauce",
+                url: "api/list/sauce",
                 data: {},
                 success: function (response) {
                     let sauce = response['all_sauce']
@@ -217,7 +217,7 @@ submitButton.addEventListener("click", gogo);
         function showCheese() {
             $.ajax({
                 type: "GET",
-                url: "http://127.0.0.1:5000/api/list/cheese",
+                url: "/api/list/cheese",
                 data: {},
                 success: function (response) {
                     let cheese = response['all_cheese']
