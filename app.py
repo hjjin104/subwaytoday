@@ -67,14 +67,14 @@ def menuPost():
     bread_receive = request.form['bread_give']
     sauce_receive = request.form.getlist('sauce_give')
     cheese_receive = request.form['cheese_give']
-    comment_receive = request.form['comment_give']
+    # comment_receive = request.form['comment_give']
 
     doc = {
         'sandwich': sandwich_receive,
         'bread': bread_receive,
         'sauce': sauce_receive,
         'cheese': cheese_receive,
-        'comment':comment_receive,
+        'comment': "본연의 맛을 즐기는게 최고!!",
         'like': 0
     }
     db.userchoice.insert_one(doc)
