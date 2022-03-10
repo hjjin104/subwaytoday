@@ -131,7 +131,7 @@
           </div>
 
           <div id="input-tip" class="input-tip2" style="position: absolute; left: 12vw; top: 30.7vw; z-index: +1">
-            <span>${sandwich}</span> </div>
+            <span>${comment}</span> </div>
 
           <!--   데코 오브젝트 -->
 
