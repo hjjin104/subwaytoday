@@ -37,17 +37,17 @@
   height: 4.18vw;
 }
 /* 인기순 최신순 검색창 */
-.container{
+.container {
   width: 84vw;
   height: 8vw;
 }
 
 .search-input {
   background-color: transparent;
-  background-color: white;
-  border: none;
-  width: 21vw;
-  height: 5vw;
+  border: 1px solid black;
+  width: 20vw;
+  height: 2.5vw;
+  margin-top: 1.6vw;
   font-size: 1.5vw;
 }
 .search-input2 {

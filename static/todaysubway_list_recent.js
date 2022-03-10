@@ -136,17 +136,12 @@ function popularList(val = "") {
             />
           </div>
 
-         
-
-          
-
           <div style="position: absolute; left: 8vw; top: 19vw; z-index: +1;">
             <img
                     class="img-tip"
                     src="https://drive.google.com/uc?id=1G5_vQiPjjTp_I5aMpe8ZZ5ITvSmIAqPU"
             />
           </div>
-
           <div style="position: absolute; left: 11vw; top: 22vw">
             <input
                     id="input-tip"
@@ -192,9 +187,7 @@ const newSandwich = [
     date: "2020-01-05",
   },
 ];
-const NewMake = newSandwich.sort(function (a, b) {
-  return new Date(b.date) - new Date(a.date);
-});
+const NewMake = newSandwich.sort(); // 지우지 마세요
 
 const NewMaking = NewMake.splice(0, 10);
 
@@ -207,10 +200,96 @@ function newList(val = "") {
       const li = document.createElement("li");
       li.innerHTML = `
       <div class="white-cards">
-        <p>좋아요 : ${NewSandwich.like}</p>
-        <p>이름 : ${NewSandwich.name}</p>
+        <div class="result-box" style="position: relative">
+          <div style="position: absolute; left: 31vw; top: 5vw">
+            <img
+              class="bar-bread"
+              id="bar-bread"
+              src="https://drive.google.com/uc?id=11X3DD4jXWBJqg5lp-qdYaDb8L7wFyOeu"
+            />
+          </div>
+          <div style="position: absolute; left: 32vw; top: 11vw">
+            <img
+              class="bar-sauce"
+              id="bar-sauce"
+              src="https://drive.google.com/uc?id=1xgMJMT19UtQnUmG96rKRvSOjFwJX4kOt"
+            />
+          </div>
+          <div style="position: absolute; left: 31.5vw; top: 16vw">
+            <img
+              class="bar-cheese"
+              id="bar-cheese"
+              src="https://drive.google.com/uc?id=1UmUNlUiUlHS6l1RxTEHImZwlBogi_olA"
+            />
+          </div>
+
+          <div
+            id="menu"
+            class="name-div"
+            style="position: absolute; left: 4.5vw; top: 3vw"
+          >
+            <span class="name">${NewSandwich.name}</span>
+          </div>
+          <div
+            id="bread"
+            style="
+              position: absolute;
+              left: 43vw;
+              top: 4.4vw;
+              font-size: 2vw;
+              font-weight: bold;
+            "
+          >
+            플랫브래드
+          </div>
+          <div
+            id="sauce"
+            style="
+              position: absolute;
+              left: 45vw;
+              top: 11vw;
+              font-size: 1.8vw;
+              font-weight: bold;
+            "
+          >
+            스위트 칠리, 허니머스타드
+          </div>
+          <div
+            id="cheese"
+            style="
+              position: absolute;
+              left: 41vw;
+              top: 16.5vw;
+              font-size: 2vw;
+              font-weight: bold;
+            "
+          >
+            아메리칸 치즈
+          </div>
+          <div style="position: absolute; left: 5vw; top: 2vw">
+            <img
+              class="img-sdw"
+              id="img-sdw"
+              src="https://www.subway.co.kr/upload/menu/%EC%95%B1%EC%9A%A9_%EB%A1%9C%ED%8B%B0%EC%84%B8%EB%A6%AC_%EB%B0%94%EB%B9%84%ED%81%90_%EC%B9%98%ED%82%A8_%EC%95%84%EB%B3%B4%EC%B9%B4%EB%8F%84_15cm_%EB%8B%A8%ED%92%88_20220228055941893.png"
+            />
+          </div>
+
+          <div style="position: absolute; left: 8vw; top: 19vw; z-index: +1;">
+            <img
+                    class="img-tip"
+                    src="https://drive.google.com/uc?id=1G5_vQiPjjTp_I5aMpe8ZZ5ITvSmIAqPU"
+            />
+          </div>
+          <div style="position: absolute; left: 11vw; top: 22vw">
+            <input
+                    id="input-tip"
+                    class="input-tip"
+                    type="text"
+                    placeholder=" 당신만의 추가 팁이 있다면?(25자이내)"
+            />
+          </div>
+        </div>
       </div>
-        
       `;
       newdate.appendChild(li);
     }
