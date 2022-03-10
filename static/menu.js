@@ -94,7 +94,6 @@ function gogo() {
     url: "/menu",
     traditional: true,
     data: {
-      find_give: sandwich,
       sandwich_give: sandwich,
       bread_give: bread,
       sauce_give: sauceArr,
@@ -155,6 +154,7 @@ function showSandwiches() {
                                   SandwichMenu.classList.remove("sandwich");
                                 }
                                 this.classList.add("sandwich");
+                                
                               }
                               
                               for (var i = 0; i < sandwichLinks.length; i++) {
@@ -238,7 +238,9 @@ function showSauces() {
                                       </div>
                                   </div>
                                   <div>
-                                      <button class="select3" value="menu01">${name}</button>
+                                      <button name="src" onclick="count_ck(this)" class="select3" value="menu01">
+                                      ${name}
+                                      </button>
                                   </div>
                               </div>
                               <script>
@@ -253,9 +255,11 @@ function showSauces() {
                               }
 
                               for (var i = 0; i < sauceLinks.length; i++) {
-                                sauceLinks[i].addEventListener("click", SauceSelect);
+                                sauceLinks[i].addEventListener("click", SauceSelect);                  
                               }
-
+                              
+                              
+                              
                               </script>`;
         $("#tab3").append(temp_html);
       }
