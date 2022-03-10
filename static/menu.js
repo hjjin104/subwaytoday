@@ -110,6 +110,7 @@ function gogo() {
 
 submitButton.addEventListener("click", gogo);
 
+    //크롤링한 값
     $(document).ready(function () {
             showSandwiches();
             showBreads();
