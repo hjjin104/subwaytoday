@@ -136,13 +136,13 @@ function popularList(val = "") {
             />
           </div>
 
-          <div style="position: absolute; left: 8vw; top: 19vw; z-index: +1;">
+          <div style="position: absolute; left: 6vw; top: 19vw; z-index: +1;">
             <img
                     class="img-tip"
                     src="https://drive.google.com/uc?id=1G5_vQiPjjTp_I5aMpe8ZZ5ITvSmIAqPU"
             />
           </div>
-          <div style="position: absolute; left: 11vw; top: 22vw">
+          <div style="position: absolute; left: 8vw; top: 22vw">
             <input
                     id="input-tip"
                     class="input-tip"
@@ -150,6 +150,25 @@ function popularList(val = "") {
                     placeholder=" 당신만의 추가 팁이 있다면?(25자이내)"
             />
           </div>
+          <button
+                        style="position: absolute; top: 20vw; left: 65vw;"
+                        class="btn-top10"
+                        id="btn-like"
+                        type="submit"
+                >
+                    <img
+                            class="img-like"
+                            src="https://drive.google.com/uc?id=1DpuLAgFekl6djt-tXoVtn0yGzfTQFYUk"/>
+
+          </button>
+
+                <div class="nb-like"
+                     style="position: absolute; top: 21.6vw; left: 68vw; z-index: +1">
+                    <span id="nb-like">132</span></div>
+          
+          
+          
+          
         </div>
       </div>
         `;
@@ -274,13 +293,13 @@ function newList(val = "") {
             />
           </div>
 
-          <div style="position: absolute; left: 8vw; top: 19vw; z-index: +1;">
+          <div style="position: absolute; left: 6vw; top: 19vw; z-index: +1;">
             <img
                     class="img-tip"
                     src="https://drive.google.com/uc?id=1G5_vQiPjjTp_I5aMpe8ZZ5ITvSmIAqPU"
             />
           </div>
-          <div style="position: absolute; left: 11vw; top: 22vw">
+          <div style="position: absolute; left: 8vw; top: 22vw">
             <input
                     id="input-tip"
                     class="input-tip"
@@ -288,6 +307,22 @@ function newList(val = "") {
                     placeholder=" 당신만의 추가 팁이 있다면?(25자이내)"
             />
           </div>
+          
+          <button
+                        style="position: absolute; top: 20vw; left: 65vw;"
+                        class="btn-top10"
+                        id="btn-like"
+                        type="submit"
+                >
+                    <img
+                            class="img-like"
+                            src="https://drive.google.com/uc?id=1DpuLAgFekl6djt-tXoVtn0yGzfTQFYUk"/>
+
+                </button>
+
+                <div class="nb-like"
+                     style="position: absolute; top: 21.6vw; left: 68vw; z-index: +1">
+                    <span id="nb-like">132</span></div>
         </div>
       </div>
       `;
