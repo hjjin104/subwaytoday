@@ -240,3 +240,25 @@ span {
   text-align: center;
   margin: auto;
 }
+/* 치즈 부분 GO & TIP 버튼 */
+.total-btn {
+  position: absolute;
+  top: 35vw;
+  width: 100%;
+  display: block;
+}
+.input-tip {
+  display: block;
+  top: 20vw;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+#tab4 {
+  height: 50vw;
+}
+.tip {
+  position: absolute;
+  top: 25vw;
+  width: 100%;
+}
