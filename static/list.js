@@ -151,19 +151,19 @@ function popularList(val = "") {
             />
           </div>
           <button
-                        style="position: absolute; top: 20vw; left: 65vw;"
-                        class="btn-top10"
+                        style="position: absolute; top: 22vw; left: 66vw;"
+                        class="btn-like"
                         id="btn-like"
                         type="submit"
                 >
-                    <img
+                    <img style="position: absolute; bottom: -2vw; left: -0.6vw;"
                             class="img-like"
                             src="https://drive.google.com/uc?id=1607K8hfTAfjaBIxlhuNpSv7m-YIXQh38"/>
 
           </button>
 
-                <div class="nb-like"
-                     style="position: absolute; top: 21.6vw; left: 68.5vw; z-index: +1">
+          <div class="nb-like"
+                     style="position: absolute; top: 23vw; left: 68.5vw; z-index: +1">
                     <span id="nb-like">132</span></div>
           
           
@@ -309,19 +309,19 @@ function newList(val = "") {
           </div>
           
           <button
-                        style="position: absolute; top: 20vw; left: 65vw;"
-                        class="btn-top10"
+                        style="position: absolute; top: 22vw; left: 66vw;"
+                        class="btn-like"
                         id="btn-like"
                         type="submit"
                 >
-                    <img
+                    <img style="position: absolute; bottom: -2vw; left: -0.6vw;"
                             class="img-like"
                             src="https://drive.google.com/uc?id=1607K8hfTAfjaBIxlhuNpSv7m-YIXQh38"/>
 
-                </button>
+          </button>
 
-                <div class="nb-like"
-                     style="position: absolute; top: 21.6vw; left: 68.5vw; z-index: +1">
+          <div class="nb-like"
+                     style="position: absolute; top: 23vw; left: 68.5vw; z-index: +1">
                     <span id="nb-like">132</span></div>
         </div>
       </div>
