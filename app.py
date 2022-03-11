@@ -13,7 +13,7 @@ db = client.dbhappy
 
 @app.route('/')
 def home():
-    return render_template('todaysubway_main.html')
+    return render_template('home.html')
 
 
 @app.route('/menu')
@@ -23,16 +23,12 @@ def menu():
 
 @app.route('/check')
 def check():
-    return render_template('todaysubway_lastpage.html')
+    return render_template('result.html')
 
 
 @app.route('/listing')
 def listing():
-    return render_template('todaysubway_list_top10.html')
-
-@app.route('/newlisting')
-def newlisting():
-    return render_template('todaysubway_list_recent.html')
+    return render_template('list.html')
 
 
 #menu-sadnwich api
