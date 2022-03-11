@@ -85,13 +85,8 @@
   cursor: pointer;
 }
 
-.img-top10 {
-  width: 26.358vw;
-  height: 6.076vw;
-}
 
 .img-recent {
-  width: 22.013vw;
   height: 6.076vw;
 }
 
@@ -109,9 +104,9 @@
 .yellow-box {
   background-color: rgb(255, 217, 102);
   width: 84vw;
-  height: 305vw;
   margin: 0 auto auto auto;
   border-radius: 1vw;
+  padding-bottom: 3vw;
 }
 
 /* 카드 내용 */
