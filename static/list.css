@@ -182,12 +182,14 @@
   color: white;
 }
 
-.btn-like{
+.btn-like {
   width: 5vw;
   height: 4vw;
-  background-color: black;
   border-radius: 1vw;
   cursor: pointer;
+}
+.btn-like:hover {
+  background-color: lightpink;
 }
 
 .img-like {
