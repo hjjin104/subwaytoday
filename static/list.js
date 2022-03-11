@@ -158,12 +158,12 @@ function popularList(val = "") {
                 >
                     <img
                             class="img-like"
-                            src="https://drive.google.com/uc?id=1DpuLAgFekl6djt-tXoVtn0yGzfTQFYUk"/>
+                            src="https://drive.google.com/uc?id=1607K8hfTAfjaBIxlhuNpSv7m-YIXQh38"/>
 
           </button>
 
                 <div class="nb-like"
-                     style="position: absolute; top: 21.6vw; left: 68vw; z-index: +1">
+                     style="position: absolute; top: 21.6vw; left: 68.5vw; z-index: +1">
                     <span id="nb-like">132</span></div>
           
           
@@ -316,12 +316,12 @@ function newList(val = "") {
                 >
                     <img
                             class="img-like"
-                            src="https://drive.google.com/uc?id=1DpuLAgFekl6djt-tXoVtn0yGzfTQFYUk"/>
+                            src="https://drive.google.com/uc?id=1607K8hfTAfjaBIxlhuNpSv7m-YIXQh38"/>
 
                 </button>
 
                 <div class="nb-like"
-                     style="position: absolute; top: 21.6vw; left: 68vw; z-index: +1">
+                     style="position: absolute; top: 21.6vw; left: 68.5vw; z-index: +1">
                     <span id="nb-like">132</span></div>
         </div>
       </div>
