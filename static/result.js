@@ -166,7 +166,7 @@
             />
           </button>
 
-          <button class="btn-share" id="btn-map" style="position: absolute; left: 29.2vw; top: 47.5vw; z-index: +1;">
+           <button onclick="window.open('https://www.subway.co.kr/storeSearch')" type="button" class="btn-share" id="btn-map" style="position: absolute; left: 29.2vw; top: 47.5vw; z-index: +1;">
             <img
                     class="img-map"
                     src="https://drive.google.com/uc?id=1_G__Vqbz5knvZ2XiKhIo7iFaiR2Hqzet"
