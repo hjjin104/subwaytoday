@@ -16,6 +16,7 @@
                             let sauce = recipes[i]['sauce']
                             let cheese = recipes[i]['cheese']
                             let comment = recipes[i]['comment']
+                            let img = recipes[i]['img']
 
                             let temp_html = ` <div style="position: absolute; left: 23vw; top: 3vw">
             <img
@@ -104,16 +105,7 @@
             <img
               class="img-sdw"
               id="img-sdw"
-              src="https://www.subway.co.kr/upload/menu/%EC%95%B1%EC%9A%A9_%EB%A1%9C%ED%8B%B0%EC%84%B8%EB%A6%AC_%EB%B0%94%EB%B9%84%ED%81%90_%EC%B9%98%ED%82%A8_%EC%95%84%EB%B3%B4%EC%B9%B4%EB%8F%84_15cm_%EB%8B%A8%ED%92%88_20220228055941893.png"
-            />
-          </div>
-
-          <!--   칼로리 -->
-
-          <div style="position: absolute; left: 7.2vw; top: 21vw">
-            <img
-                    class="kcal"
-                    src="https://drive.google.com/uc?id=19qeR0F8hoSlvnYKefzSjy8Cj3ouY2Tkp"
+              src="${img}"
             />
           </div>
 

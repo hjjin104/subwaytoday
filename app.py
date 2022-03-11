@@ -68,17 +68,22 @@ def menuPost():
     sauce_receive = request.form.getlist('sauce_give')
     cheese_receive = request.form['cheese_give']
     # comment_receive = request.form['comment_give']
+    img_find = request.form['find_give']
+    user = db.a_sandwich.find_one({'name': img_find})['img']
 
     doc = {
         'sandwich': sandwich_receive,
         'bread': bread_receive,
         'sauce': sauce_receive,
         'cheese': cheese_receive,
-        'comment': "본연의 맛을 즐기는게 최고!!",
+        'comment': "yujmyum",
+        'img': user,
         'like': 0
     }
+    print(user)
     db.userchoice.insert_one(doc)
     return jsonify({'result': 'success', 'msg': '완료되었습니다!'})
+
 
 #mychoice data 내려주기
 @app.route('/menu', methods=['GET'])

@@ -87,7 +87,7 @@ function gogo() {
     sauceArr.push(sauces);
   }
 
-  console.log(sandwich,bread,cheese,sauceArr);
+  console.log(sauceArr);
 
   $.ajax({
     type: "POST",
@@ -155,6 +155,7 @@ function showSandwiches() {
                                   SandwichMenu.classList.remove("sandwich");
                                 }
                                 this.classList.add("sandwich");
+                                
                               }
                               
                               for (var i = 0; i < sandwichLinks.length; i++) {
@@ -238,7 +239,8 @@ function showSauces() {
                                       </div>
                                   </div>
                                   <div>
-                                      <button class="select3" value="menu01">${name}</button>
+                                    
+                                    <button class="select3" value="menu01">${name}</button>
                                   </div>
                               </div>
                               <script>
@@ -253,15 +255,37 @@ function showSauces() {
                               }
 
                               for (var i = 0; i < sauceLinks.length; i++) {
-                                sauceLinks[i].addEventListener("click", SauceSelect);
+                                sauceLinks[i].addEventListener("click", SauceSelect);                  
                               }
+                              
+                              var MaxCount = 4;
+                              var Count = 0;
 
+                              function CheckCount(field){
+                                if(field.checked){ 
+                                  Count += 1
+                                }else{
+                                  Count -= 1
+                                }
+
+                                if(Count > MaxCount){
+                                  alert("4가지 까지 선택 가능 합니다")
+                                field.checked = false
+                                Count -= 1
+                                }
+                              }
+                              for(var i = 0; i < sauceLinks.length; i++){
+                                sauceLinks[i].addEventListener("click", SauceSelect);
+                              } 
+                              
+                              
                               </script>`;
         $("#tab3").append(temp_html);
       }
     },
   });
 }
+button;
 function showCheese() {
   $.ajax({
     type: "GET",
