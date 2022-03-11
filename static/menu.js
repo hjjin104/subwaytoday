@@ -258,26 +258,6 @@ function showSauces() {
                                 sauceLinks[i].addEventListener("click", SauceSelect);                  
                               }
                               
-                              var MaxCount = 4;
-                              var Count = 0;
-
-                              function CheckCount(field){
-                                if(field.checked){ 
-                                  Count += 1
-                                }else{
-                                  Count -= 1
-                                }
-
-                                if(Count > MaxCount){
-                                  alert("4가지 까지 선택 가능 합니다")
-                                field.checked = false
-                                Count -= 1
-                                }
-                              }
-                              for(var i = 0; i < sauceLinks.length; i++){
-                                sauceLinks[i].addEventListener("click", SauceSelect);
-                              } 
-                              
                               
                               </script>`;
         $("#tab3").append(temp_html);
