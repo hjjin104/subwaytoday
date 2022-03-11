@@ -94,6 +94,7 @@ function gogo() {
     url: "/menu",
     traditional: true,
     data: {
+      find_give: sandwich,
       sandwich_give: sandwich,
       bread_give: bread,
       sauce_give: sauceArr,
