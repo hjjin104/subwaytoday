@@ -45,6 +45,7 @@
 .search-input {
   background-color: transparent;
   border: 1px solid black;
+  border: none;
   width: 20vw;
   height: 2.5vw;
   margin-top: 1.6vw;
@@ -53,6 +54,7 @@
 .search-input2 {
   background-color: transparent;
   border: 1px solid black;
+  border: none;
   width: 20vw;
   height: 2.5vw;
   font-size: 1.5vw;
@@ -84,7 +86,6 @@
   background-color: transparent;
   cursor: pointer;
 }
-
 
 .img-recent {
   height: 6.076vw;
@@ -173,7 +174,6 @@
 }
 
 .nb-like {
-
   width: 5vw;
   height: 3 vw;
   font-size: 2.2vw;
@@ -185,9 +185,6 @@
 .img-like {
   width: 8vw;
 }
-
-
-
 
 .ranking1 {
   width: 10vw;
