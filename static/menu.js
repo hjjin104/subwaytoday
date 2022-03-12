@@ -118,7 +118,7 @@ $(document).ready(function () {
   showSauces();
   showCheese();
 });
-// 샌드위치 조합 요청 
+// 샌드위치 조합 요청
 function showSandwiches() {
   $.ajax({
     type: "GET",
