@@ -63,7 +63,7 @@ def menuPost():
     bread_receive = request.form['bread_give']
     sauce_receive = request.form.getlist('sauce_give')
     cheese_receive = request.form['cheese_give']
-    # comment_receive = request.form['comment_give']
+    comment_receive = request.form['comment_give']
     img_find = request.form['find_give']
     user = db.a_sandwich.find_one({'name': img_find})['img']
 
@@ -72,13 +72,13 @@ def menuPost():
         'bread': bread_receive,
         'sauce': sauce_receive,
         'cheese': cheese_receive,
-        'comment': "yujmyum",
+        'comment': comment_receive,
         'img': user,
         'like': 0
     }
     print(user)
     db.userchoice.insert_one(doc)
-    return jsonify({'result': 'success', 'msg': '완료되었습니다!'})
+    return jsonify({'result': 'success', 'msg': '선택이 완료되었습니다!'})
 
 
 #mychoice data 내려주기

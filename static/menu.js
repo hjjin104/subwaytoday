@@ -81,6 +81,8 @@ function gogo() {
   const bread = document.querySelector(".bread").innerText;
   const cheese = document.querySelector(".cheese").innerText;
   const sauceAll = document.querySelectorAll(".sauce");
+  let comment = $('#input-tip').val()
+
 
   for (let i = 0; i < sauceAll.length; i++) {
     let sauces = sauceAll[i].innerText;
@@ -99,6 +101,7 @@ function gogo() {
       bread_give: bread,
       sauce_give: sauceArr,
       cheese_give: cheese,
+      comment_give: comment
     },
     success: function (response) {
       // 성공하면
