@@ -58,10 +58,12 @@ body {
   /* margin-top: 1vw; */
   width: 80vw;
   height: 6vw;
+  width: 100%;
+  margin: auto;
 }
 /* 샌드위치 빵 치즈 소스 버튼 */
 .NavBtn {
-  width: 18.8vw;
+  width: 19.17vw;
   height: 100%;
   border: none;
   outline: none;
@@ -88,6 +90,8 @@ body {
   display: block;
   background-color: white;
   border-radius: 1vw;
+  border-bottom-left-radius: 0vw;
+  border-bottom-right-radius: 0vw;
   width: 100%;
   height: 14.4vw;
   margin: auto;
@@ -200,6 +204,8 @@ body {
 .firstimg {
   position: relative;
   overflow: hidden;
+  border-top-left-radius: 1vw;
+  border-top-right-radius: 1vw;
 }
 
 .firstimg::before {
@@ -208,9 +214,10 @@ body {
   width: 100%;
   height: 100%;
   background: rgb(0, 153, 71, 0.7);
+  border-top-left-radius: 1vw;
+  border-top-right-radius: 1vw;
   position: absolute;
   top: -100%;
-  /* bottom: -100%; */
   left: 0;
   transition: all 0.3s;
 }
