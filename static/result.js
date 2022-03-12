@@ -34,21 +34,21 @@
           </div>
 
           <!--   바 -->
-          <div style="position: absolute; left: 33vw; top: 14vw">
+          <div style="position: absolute; left: 33vw; top: 15vw">
             <img
               class="bar-bread"
               id="bar-bread"
               src="https://drive.google.com/uc?id=11X3DD4jXWBJqg5lp-qdYaDb8L7wFyOeu"
             />
           </div>
-          <div style="position: absolute; left: 34.5vw; top: 19.5vw">
+          <div style="position: absolute; left: 34.5vw; top: 20.5vw">
             <img
               class="bar-sauce"
               id="bar-sauce"
               src="https://drive.google.com/uc?id=1xgMJMT19UtQnUmG96rKRvSOjFwJX4kOt"
             />
           </div>
-          <div style="position: absolute; left: 34vw; top: 24vw">
+          <div style="position: absolute; left: 34vw; top: 25vw">
             <img
               class="bar-cheese"
               id="bar-cheese"
@@ -61,17 +61,17 @@
           <div
             id="menu"
             class="name-div"
-            style="position: absolute; left: 6.2vw; top: 12vw"
+            style="position: absolute; left: 6.9vw; top: 13vw"
           >
-            <span class="name">${sandwich}</span>
+            <span class="name">[${sandwich}]</span>
           </div>
           <div
             id="bread"
             style="
               position: absolute;
               left: 45vw;
-              top: 13.4vw;
-              font-size: 2vw;
+              top: 14.4vw;
+              font-size: 1.8vw;
               font-weight: bold;
             "
           >
@@ -82,9 +82,10 @@
             style="
               position: absolute;
               left: 47vw;
-              top: 19vw;
+              top: 20vw;
               font-size: 1.8vw;
               font-weight: bold;
+              width: 26vw;
             "
           >
             ${sauce}
@@ -94,14 +95,14 @@
             style="
               position: absolute;
               left: 43.8vw;
-              top: 24.5vw;
-              font-size: 2vw;
+              top: 25.5vw;
+              font-size: 1.8vw;
               font-weight: bold;
             "
           >
             ${cheese}
           </div>
-          <div style="position: absolute; left: 8vw; top: 10vw">
+          <div style="position: absolute; left: 8vw; top: 12vw">
             <img
               class="img-sdw"
               id="img-sdw"
@@ -112,23 +113,23 @@
 
           <!--   팁박스 -->
 
-          <div style="position: absolute; left: 6.8vw; top: 28vw; z-index: +1;">
+          <div style="position: absolute; left: 6.8vw; top: 29vw; z-index: +1;">
             <img
                     class="img-tip"
                     src="https://drive.google.com/uc?id=1G5_vQiPjjTp_I5aMpe8ZZ5ITvSmIAqPU"
             />
           </div>
 
-          <div class="input-tip" style="position: absolute; left: 12vw; top: 30vw">
+          <div class="input-tip" style="position: absolute; left: 12vw; top: 31vw">
           </div>
 
-          <div id="input-tip" class="input-tip2" style="position: absolute; left: 12vw; top: 30.7vw; z-index: +1">
+          <div id="input-tip" class="input-tip2" style="position: absolute; left: 12vw; top: 31.7vw; z-index: +1">
             <span>${comment}</span> </div>
 
           <!--   데코 오브젝트 -->
 
 
-          <div style="position: absolute; left: 6.2vw; top: 6.5vw; z-index: +1;">
+          <div style="position: absolute; left: 2vw; top: 6.5vw; z-index: +1;">
             <img
                     class="img-tape"
                     src="https://drive.google.com/uc?id=1M9jF8VYSwDLTr4p7N3DF8WQEDnrfoKHw"

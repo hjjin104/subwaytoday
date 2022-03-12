@@ -35,6 +35,10 @@
             border-radius: 2vw;
         }
 
+        .result-backimg{
+            width: 70vw;
+        }
+
         .img-title{
             width: 34vw;
         }
@@ -62,7 +66,7 @@
         }
         .name{
             font-size: 1.8vw;
-            font-weight: bold;
+            font-weight: bolder;
 
 
         }
@@ -100,7 +104,7 @@
 
         /*데코오브젝트*/
         .img-tape{
-            width: 9vw;
+            width: 12vw;
         }
 
         /*공유버튼*/
