@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 
 
 //이것은 "최신순" 리스트를 위한 ajax
@@ -33,4 +31,3 @@ $(document).ready(function () {
 
                 });
  }
->>>>>>> Stashed changes
