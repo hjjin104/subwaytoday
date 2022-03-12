@@ -44,6 +44,7 @@ body {
   width: 80vw;
   display: block;
   margin: auto;
+  margin-top: 5vw;
 }
 
 #menu {
@@ -256,6 +257,7 @@ span {
 }
 #tab4 {
   height: 50vw;
+  width: 80vw;
 }
 .tip {
   position: absolute;
