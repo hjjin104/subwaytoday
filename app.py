@@ -81,17 +81,24 @@ def menuPost():
     return jsonify({'result': 'success', 'msg': '선택이 완료되었습니다!'})
 
 
-#mychoice data 내려주기
-@app.route('/menu', methods=['GET'])
-def all_mychoice ():
-    mychoices = list(db.userchoice.find({}, {'_id': False}))
-    return jsonify({'all_mychoices': mychoices})
-
 #lastpage로 조합 내려주기
 @app.route('/check/check', methods=['GET'])
 def last_page():
     mychoices = list(db.userchoice.find({}, {'_id': False}).sort("_id", -1).limit(1))
     return jsonify({'all_mychoices': mychoices})
+
+#최신순 data 내려주기
+@app.route('/listing', methods=['GET'])
+def all_new():
+    newchoices = list(db.userchoice.find({}, {'_id': False}))
+    return jsonify({'all_newchoices': newchoices})
+
+
+#좋아요순 data 내려주기
+@app.route('/listing', methods=['GET'])
+def all_popular():
+    popularchoices = list(db.userchoice.find({}, {'_id': False}))
+    return jsonify({'all_popularchoices': popularchoices})
 
 
 #좋아요 api
