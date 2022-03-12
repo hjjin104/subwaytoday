@@ -199,7 +199,7 @@ $(document).ready(function () {
                     success: function (response) {
                         let recipes = response['all_popularchoices']
                         for (let i = 0; i < recipes.length; i++) {
-                            // let userid = recipes[i]['userid']
+                            let id = recipes[i]['_id']['$oid']
                             let sandwich = recipes[i]['sandwich']
                             let bread = recipes[i]['bread']
                             let sauce = recipes[i]['sauce']
@@ -207,7 +207,6 @@ $(document).ready(function () {
                             let comment = recipes[i]['comment']
                             let img = recipes[i]['img']
                             let like = recipes[i]['like']
-
                             // 여기에 최신순 탭 리스트에 들어갈 html뼈대 붙이면 됩니다
                             let temp_html = `<div class="white-cards">
         <div class="result-box" style="position: relative">
@@ -302,7 +301,7 @@ $(document).ready(function () {
           </div>
 
           
-          <button
+          <button onclick="likeSandwich('${id}')"
                         style="position: absolute; top: 22vw; left: 66vw;"
                         class="btn-like"
                         id="btn-like"
@@ -327,6 +326,18 @@ $(document).ready(function () {
                 });
  }
 
+ //인기순 페이지에서 좋아요 받기
+            function likeSandwich(id) {
+                $.ajax({
+                    type: 'POST',
+                    url: '/listing/like',
+                    data: {like_give: id},
+                    success: function (response) {
+                        alert(response['msg']);
+                        window.location.reload()
+                    }
+                });
+            }
 
 // // 최선순 정렬
 // const newSandwich = [

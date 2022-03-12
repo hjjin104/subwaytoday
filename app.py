@@ -1,10 +1,17 @@
+import json
+
 from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
 
 
-
+from bson import json_util, ObjectId
+import json
 from pymongo import MongoClient
+from bson.objectid import ObjectId
+import sys
+# from bson.json_util import dumps
+# from json import JSONEncoder
 
 # client = MongoClient('localhost', 27017)
 client = MongoClient('mongodb://test:test@52.79.241.120', 27017)
@@ -77,7 +84,7 @@ def menuPost():
         'img': user,
         'like': 0,
     }
-
+    objectid = db.userchoice.insert_one(doc).inserted_id
     db.userchoice.insert_one(doc)
     return jsonify({'result': 'success', 'msg': '조합이 완료되었습니다!'})
 
@@ -99,8 +106,22 @@ def mychoice_recent ():
 #좋아요순 data 내려주기
 @app.route('/listing/popular', methods=['GET'])
 def all_popular():
-    popularchoices = list(db.userchoice.find({}, {'_id': False}).sort("like", -1).limit(10))
-    return jsonify({'all_popularchoices': popularchoices})
+    popularchoices = list(db.userchoice.find({}).sort("like", -1).limit(10))
+    popular = json.loads(json_util.dumps(popularchoices))
+    return jsonify({'all_popularchoices': popular})
+
+#좋아요 api
+@app.route('/listing/like', methods=['POST'])
+def like_sandwich():
+    like_receive = request.form['like_give']
+    target_id = db.userchoice.find_one({'_id':ObjectId(like_receive)})
+    # print(target_id, file=sys.stdout)
+    current_like = target_id['like']
+
+    new_like = current_like + 1
+    db.userchoice.update_one({'_id': ObjectId(like_receive)}, {'$set': {'like': new_like}})
+
+    return jsonify({'msg':'좋아요 완료!'})
 
 
 #좋아요 api
