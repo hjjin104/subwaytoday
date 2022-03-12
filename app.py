@@ -94,21 +94,6 @@ def last_page():
     return jsonify({'all_mychoices': mychoices})
 
 
-
-#listing로 조합 내려주기- 최신순
-@app.route('/listing', methods=['GET'])
-def newlisting():
-    newchoices = list(db.userchoice.find({}, {'_id': False}).sort("_id", -1))
-    return jsonify({'all_new': newchoices})
-
-#listing로 조합 내려주기- 인기순
-@app.route('/api/list', methods=['GET'])
-def popularlisting():
-    popularchoices = list(db.userchoice.find({}, {'_id': False}).sort("like", -1))
-    return jsonify({'all_popular': popularchoices})
-
-
-
 #좋아요 api
 # @app.route('/listing', methods=['POST'])
 # def like_sandwich():
@@ -137,6 +122,35 @@ def popularlisting():
 #     return jsonify({'result': 'success', 'msg': '완료되었습니다!'})
 
 
+# db.total.aggregate([
+#     {$lookup:{
+#     from: "userchoice",
+#     localField: "savecomment",
+#     foreignField: "_id",
+#     as: "total",
+# }
+# }
+# ])
+
+
+# subway_dict_list = [{
+#     'sandwich': sandwich_receive,
+#     'bread': bread_receive,
+#     'sauce': sauce_receive,
+#     'cheese': cheese_receive
+# }]
+# df = pd.DataFrame(subway_dict_list, columns=['sandwich', 'bread', 'sauce', 'cheese'])
+#
+# subway_comment_list = [{
+#    'comment': comment_receive
+# }]
+# df2 = pd.DataFrame(subway_comment_list, columns= ['comment'])
+#
+# # df.append(df2) 아래로 테이블 추가
+
+
+# def merge_data():
+#    return .join(['num' for nume in xrage(1.10)])
 
 if __name__ == '__main__':
     app.run('0.0.0.0', port=5000, debug=True)
