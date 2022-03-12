@@ -113,17 +113,17 @@
 
           <!--   팁박스 -->
 
-          <div style="position: absolute; left: 6.8vw; top: 29vw; z-index: +1;">
+          <div style="position: absolute; left: 6.8vw; top: 30vw; z-index: +1;">
             <img
                     class="img-tip"
                     src="https://drive.google.com/uc?id=1G5_vQiPjjTp_I5aMpe8ZZ5ITvSmIAqPU"
             />
           </div>
 
-          <div class="input-tip" style="position: absolute; left: 12vw; top: 31vw">
+          <div class="input-tip" style="position: absolute; left: 12vw; top: 32vw">
           </div>
 
-          <div id="input-tip" class="input-tip2" style="position: absolute; left: 12vw; top: 31.7vw; z-index: +1">
+          <div id="input-tip" class="input-tip2" style="position: absolute; left: 12vw; top: 32.7vw; z-index: +1">
             <span>${comment}</span> </div>
 
           <!--   데코 오브젝트 -->
