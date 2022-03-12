@@ -182,12 +182,18 @@
   color: white;
 }
 
-.btn-like{
+.btn-like {
   width: 5vw;
   height: 4vw;
-  background-color: black;
+  background-color: white;
   border-radius: 1vw;
   cursor: pointer;
+}
+.btn-like:hover {
+  background-color: gainsboro;
+}
+.btn-like:active {
+  background-color: lightpink;
 }
 
 .img-like {

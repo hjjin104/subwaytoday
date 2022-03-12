@@ -20,25 +20,26 @@
 
     <div class="result-box">
       <div class="result-box" style="position: relative">
+        <div class="tab">
+          <button class="NavBtn active" onclick="openTab(event, 'tab1')">
+            샌드위치
+          </button>
+
+          <button class="NavBtn" onclick="openTab(event, 'tab2')">
+            빵
+          </button>
+
+          <button class="NavBtn" onclick="openTab(event, 'tab3')">
+            소스
+          </button>
+
+          <button class="NavBtn" onclick="openTab(event, 'tab4')">
+            치즈
+          </button>
+        </div>
         <div id="menu">
           <!-- 샌드위치 빵 치즈 소스 nav -->
-          <div class="tab">
-            <button class="NavBtn active" onclick="openTab(event, 'tab1')">
-              샌드위치
-            </button>
 
-            <button class="NavBtn" onclick="openTab(event, 'tab2')">
-              빵
-            </button>
-
-            <button class="NavBtn" onclick="openTab(event, 'tab3')">
-              소스
-            </button>
-
-            <button class="NavBtn" onclick="openTab(event, 'tab4')">
-              치즈
-            </button>
-          </div>
 
           <div>
             <!-- 샌드위치 선택 -->
