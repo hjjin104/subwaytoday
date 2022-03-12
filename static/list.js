@@ -136,20 +136,24 @@ function popularList(val = "") {
             />
           </div>
 
+          
+
+
           <div style="position: absolute; left: 6vw; top: 19vw; z-index: +1;">
             <img
                     class="img-tip"
                     src="https://drive.google.com/uc?id=1G5_vQiPjjTp_I5aMpe8ZZ5ITvSmIAqPU"
             />
           </div>
-          <div style="position: absolute; left: 8vw; top: 22vw">
-            <input
-                    id="input-tip"
-                    class="input-tip"
-                    type="text"
-                    placeholder=" 당신만의 추가 팁이 있다면?(25자이내)"
-            />
+
+          <div class="input-tip" style="position: absolute; left: 8vw; top: 22vw">
           </div>
+
+          <div id="input-tip" class="input-tip2" style="position: absolute; left: 8vw; top: 22.8vw">  
+            <span>코멘트</span> 
+          </div>
+
+          
           <button
                         style="position: absolute; top: 22vw; left: 66vw;"
                         class="btn-like"
@@ -159,16 +163,11 @@ function popularList(val = "") {
                     <img style="position: absolute; bottom: -2vw; left: -0.6vw;"
                             class="img-like"
                             src="https://drive.google.com/uc?id=1607K8hfTAfjaBIxlhuNpSv7m-YIXQh38"/>
-
           </button>
 
           <div class="nb-like"
-                     style="position: absolute; top: 23vw; left: 68.5vw; z-index: +1">
+                    style="position: absolute; top: 23vw; left: 68.5vw; z-index: +1">
                     <span id="nb-like">132</span></div>
-          
-          
-          
-          
         </div>
       </div>
         `;
@@ -206,9 +205,7 @@ const newSandwich = [
     date: "2020-01-05",
   },
 ];
-const NewMake = newSandwich.sort(); // 지우지 마세요
-
-const NewMaking = NewMake.splice(0, 10);
+const NewMaking = newSandwich.sort(); // 지우지 마세요
 
 const newdate = document.getElementById("newSandwich");
 
@@ -294,20 +291,19 @@ function newList(val = "") {
           </div>
 
           <div style="position: absolute; left: 6vw; top: 19vw; z-index: +1;">
-            <img
-                    class="img-tip"
-                    src="https://drive.google.com/uc?id=1G5_vQiPjjTp_I5aMpe8ZZ5ITvSmIAqPU"
-            />
+          <img
+                  class="img-tip"
+                  src="https://drive.google.com/uc?id=1G5_vQiPjjTp_I5aMpe8ZZ5ITvSmIAqPU"
+          />
           </div>
-          <div style="position: absolute; left: 8vw; top: 22vw">
-            <input
-                    id="input-tip"
-                    class="input-tip"
-                    type="text"
-                    placeholder=" 당신만의 추가 팁이 있다면?(25자이내)"
-            />
+
+          <div class="input-tip" style="position: absolute; left: 8vw; top: 22vw">
           </div>
-          
+
+          <div id="input-tip" class="input-tip2" style="position: absolute; left: 8vw; top: 22.8vw">  
+            <span>코멘트</span> 
+          </div>
+
           <button
                         style="position: absolute; top: 22vw; left: 66vw;"
                         class="btn-like"
@@ -321,7 +317,7 @@ function newList(val = "") {
           </button>
 
           <div class="nb-like"
-                     style="position: absolute; top: 23vw; left: 68.5vw; z-index: +1">
+                    style="position: absolute; top: 23vw; left: 68.5vw; z-index: +1">
                     <span id="nb-like">132</span></div>
         </div>
       </div>
