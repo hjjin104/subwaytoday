@@ -99,7 +99,7 @@ def mychoice_recent ():
 #좋아요순 data 내려주기
 @app.route('/listing/popular', methods=['GET'])
 def all_popular():
-    popularchoices = list(db.userchoice.find({}, {'_id': False}).sort("like", -1))
+    popularchoices = list(db.userchoice.find({}, {'_id': False}).sort("like", -1).limit(10))
     return jsonify({'all_popularchoices': popularchoices})
 
 
