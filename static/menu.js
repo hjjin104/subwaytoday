@@ -108,7 +108,7 @@ function gogo() {
       if (response["result"] == "success") {
         alert(response["msg"]);
       }
-    },
+    }
   });
 }
 
@@ -268,7 +268,6 @@ function showSauces() {
     },
   });
 }
-button;
 function showCheese() {
   $.ajax({
     type: "GET",

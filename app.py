@@ -67,6 +67,7 @@ def menuPost():
     img_find = request.form['find_give']
     user = db.a_sandwich.find_one({'name': img_find})['img']
 
+
     doc = {
         'sandwich': sandwich_receive,
         'bread': bread_receive,
@@ -74,9 +75,9 @@ def menuPost():
         'cheese': cheese_receive,
         'comment': comment_receive,
         'img': user,
-        'like': 0
+        'like': 0,
     }
-    print(user)
+
     db.userchoice.insert_one(doc)
     return jsonify({'result': 'success', 'msg': '조합이 완료되었습니다!'})
 
@@ -89,16 +90,16 @@ def last_page():
     return jsonify({'all_mychoices': mychoices})
 
 #최신순 data 내려주기
-@app.route('/listing', methods=['GET'])
+@app.route('/listing/list', methods=['GET'])
 def mychoice_recent ():
-    mychoices = list(db.userchoice.find({}, {'_id': False}).sort("_id", -1))
-    return jsonify({'all_mychoices': mychoices})
+    mychoices_recent = list(db.userchoice.find({}, {'_id': False}).sort("_id", -1))
+    return jsonify({'all_mychoices': mychoices_recent})
 
 
 #좋아요순 data 내려주기
-@app.route('/listing', methods=['GET'])
+@app.route('/listing/popular', methods=['GET'])
 def all_popular():
-    popularchoices = list(db.userchoice.find({}, {'_id': False}))
+    popularchoices = list(db.userchoice.find({}, {'_id': False}).sort("like", -1))
     return jsonify({'all_popularchoices': popularchoices})
 
 
