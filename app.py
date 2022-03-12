@@ -87,11 +87,21 @@ def all_mychoice ():
     mychoices = list(db.userchoice.find({}, {'_id': False}))
     return jsonify({'all_mychoices': mychoices})
 
+# #mychoice data 최신순 페이지에 내려주기
+# @app.route('/listing', methods=['GET'])
+# def mychoice_recent ():
+#     mychoices = list(db.userchoice.find({}, {'_id': False}).sort("_id", -1))
+#     return jsonify({'all_mychoices': mychoices})
+
 #lastpage로 조합 내려주기
 @app.route('/check/check', methods=['GET'])
 def last_page():
     mychoices = list(db.userchoice.find({}, {'_id': False}).sort("_id", -1).limit(1))
     return jsonify({'all_mychoices': mychoices})
+
+
+if __name__ == '__main__':
+    app.run('0.0.0.0', port=5000, debug=True)
 
 
 #좋아요 api
@@ -152,5 +162,3 @@ def last_page():
 # def merge_data():
 #    return .join(['num' for nume in xrage(1.10)])
 
-if __name__ == '__main__':
-    app.run('0.0.0.0', port=5000, debug=True)

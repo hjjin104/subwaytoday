@@ -184,17 +184,6 @@
 
                             $('.result-box').append(temp_html)
                         }
-
-// function likeRecipe(userid) {
-//   $.ajax({
-//   type: 'POST',
-//  url: '/recipe/like',
-//  data: {name_give: userid},
-//  success: function (response) {
-//   alert(response['msg']);
-//  window.location.reload()
-//      }
-//   });
                     }
 
                 });
