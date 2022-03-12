@@ -99,8 +99,9 @@ def last_page():
 #최신순 data 내려주기
 @app.route('/listing/list', methods=['GET'])
 def mychoice_recent ():
-    mychoices_recent = list(db.userchoice.find({}, {'_id': False}).sort("_id", -1))
-    return jsonify({'all_mychoices': mychoices_recent})
+    mychoices_recent = list(db.userchoice.find({}).sort("_id", -1))
+    popular = json.loads(json_util.dumps(mychoices_recent))
+    return jsonify({'all_mychoices': popular})
 
 
 #좋아요순 data 내려주기
@@ -110,9 +111,22 @@ def all_popular():
     popular = json.loads(json_util.dumps(popularchoices))
     return jsonify({'all_popularchoices': popular})
 
-#좋아요 api
+#좋아요 top10 api
 @app.route('/listing/like', methods=['POST'])
 def like_sandwich():
+    like_receive = request.form['like_give']
+    target_id = db.userchoice.find_one({'_id':ObjectId(like_receive)})
+    # print(target_id, file=sys.stdout)
+    current_like = target_id['like']
+
+    new_like = current_like + 1
+    db.userchoice.update_one({'_id': ObjectId(like_receive)}, {'$set': {'like': new_like}})
+
+    return jsonify({'msg':'좋아요 완료!'})
+
+#좋아요 recent api
+@app.route('/listing/list/like', methods=['POST'])
+def like_sandwich_recent():
     like_receive = request.form['like_give']
     target_id = db.userchoice.find_one({'_id':ObjectId(like_receive)})
     # print(target_id, file=sys.stdout)

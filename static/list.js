@@ -207,7 +207,6 @@ $(document).ready(function () {
                             let comment = recipes[i]['comment']
                             let img = recipes[i]['img']
                             let like = recipes[i]['like']
-                            // 여기에 최신순 탭 리스트에 들어갈 html뼈대 붙이면 됩니다
                             let temp_html = `<div class="white-cards">
         <div class="result-box" style="position: relative">
           <div style="position: absolute; left: 31vw; top: 5vw">
@@ -493,7 +492,7 @@ $(document).ready(function () {
                     success: function (response) {
                         let recent = response['all_mychoices']
                         for (let i = 0; i < recent.length; i++) {
-                            // let userid = recipes[i]['userid']
+                            let id = recent[i]['_id']['$oid']
                             let sandwich = recent[i]['sandwich']
                             let bread = recent[i]['bread']
                             let sauce = recent[i]['sauce']
@@ -591,7 +590,7 @@ $(document).ready(function () {
             <span>${comment}</span> 
           </div>
 
-          <button
+          <button onclick="likeSandwichRecent('${id}')"
                         style="position: absolute; top: 22vw; left: 66vw;"
                         class="btn-like"
                         id="btn-like"
@@ -615,7 +614,18 @@ $(document).ready(function () {
 
                 });
  }
-
+//최신순 페이지 좋아요 받기
+             function likeSandwichRecent(id) {
+                $.ajax({
+                    type: 'POST',
+                    url: '/listing/list/like',
+                    data: {like_give: id},
+                    success: function (response) {
+                        alert(response['msg']);
+                        window.location.reload();
+                    }
+                });
+            }
 const NewSearchInput = document.getElementById("NewSearch");
 const NewSearchBtn = document.getElementById("NewBtn");
 
