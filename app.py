@@ -78,7 +78,7 @@ def menuPost():
     }
     print(user)
     db.userchoice.insert_one(doc)
-    return jsonify({'result': 'success', 'msg': '선택이 완료되었습니다!'})
+    return jsonify({'result': 'success', 'msg': '조합이 완료되었습니다!'})
 
 
 
