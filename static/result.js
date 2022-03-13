@@ -1,24 +1,24 @@
- $(document).ready(function () {
-                showResult();
-            });
+$(document).ready(function () {
+  showResult();
+});
 
- function showResult() {
-                $.ajax({
-                    type: 'GET',
-                    url: '/check/check',
-                    data: {},
-                    success: function (response) {
-                        let recipes = response['all_mychoices']
-                        for (let i = 0; i < recipes.length; i++) {
-                            // let userid = recipes[i]['userid']
-                            let sandwich = recipes[i]['sandwich']
-                            let bread = recipes[i]['bread']
-                            let sauce = recipes[i]['sauce']
-                            let cheese = recipes[i]['cheese']
-                            let comment = recipes[i]['comment']
-                            let img = recipes[i]['img']
+function showResult() {
+  $.ajax({
+    type: "GET",
+    url: "/check/check",
+    data: {},
+    success: function (response) {
+      let recipes = response["all_mychoices"];
+      for (let i = 0; i < recipes.length; i++) {
+        // let userid = recipes[i]['userid']
+        let sandwich = recipes[i]["sandwich"];
+        let bread = recipes[i]["bread"];
+        let sauce = recipes[i]["sauce"];
+        let cheese = recipes[i]["cheese"];
+        let comment = recipes[i]["comment"];
+        let img = recipes[i]["img"];
 
-                            let temp_html = ` <div style="position: absolute; left: 23vw; top: 3vw">
+        let temp_html = ` <div style="position: absolute; left: 23vw; top: 3vw">
             <img
               class="img-title"
               id="img-title"
@@ -174,28 +174,21 @@
             />
           </button>
 
-          <button class="btn-share" id="btn-home" style="position: absolute; left: 29vw; top: 52vw; z-index: +1;">
-            <img
-                    class="img-map"
-                    src="https://drive.google.com/uc?id=10To65RsDf6yVF25yIVIrtHALN5Co02bn"
-            />
-          </button>
-`
+`;
 
-                            $('.result-box').append(temp_html)
-                        }
+        $(".result-box").append(temp_html);
+      }
 
-// function likeRecipe(userid) {
-//   $.ajax({
-//   type: 'POST',
-//  url: '/recipe/like',
-//  data: {name_give: userid},
-//  success: function (response) {
-//   alert(response['msg']);
-//  window.location.reload()
-//      }
-//   });
-                    }
-
-                });
- }
+      // function likeRecipe(userid) {
+      //   $.ajax({
+      //   type: 'POST',
+      //  url: '/recipe/like',
+      //  data: {name_give: userid},
+      //  success: function (response) {
+      //   alert(response['msg']);
+      //  window.location.reload()
+      //      }
+      //   });
+    },
+  });
+}
