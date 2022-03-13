@@ -9,7 +9,7 @@ body {
 /* 다음 페이지로 넘어가는 버튼 - 넘어갈때 쌓은 데이터를 보내 주어야 하는 작업이 필요하다. */
 #NextPage {
   display: block;
-  background-color: white;
+  background-color: rgb(255, 217, 102); /*go 버튼 배경색 */
   margin: auto;
   border: 0px;
   margin-bottom: 10%;
@@ -55,15 +55,14 @@ body {
   font-weight: normal;
 }
 .tab {
-  /* margin-top: 1vw; */
   width: 80vw;
   height: 6vw;
   width: 100%;
-  margin: auto;
 }
 /* 샌드위치 빵 치즈 소스 버튼 */
 .NavBtn {
-  width: 19.17vw;
+  width: 25%;
+  float: left;
   height: 100%;
   border: none;
   outline: none;
@@ -71,8 +70,6 @@ body {
   border-radius: 1vw;
   font-weight: bold;
   color: black;
-  margin-left: 0.2vw;
-  margin-right: 0.2vw;
   background-color: rgb(169, 209, 142);
 }
 
@@ -94,7 +91,7 @@ body {
   border-bottom-right-radius: 0vw;
   width: 100%;
   height: 14.4vw;
-  margin: auto;
+  /* margin: auto; */
 }
 /* 이미지 + 버튼 */
 .SandwichMenu {
