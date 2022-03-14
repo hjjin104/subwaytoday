@@ -122,6 +122,15 @@ body {
   margin-bottom: 1vw;
 }
 
+.white-cards2 {
+  background-color: white;
+  width: 76vw;
+  height: 28vw;
+  border-radius: 2vw;
+  margin: auto;
+  margin-bottom: 1vw;
+}
+
 .bar-bread {
   width: 10vw;
 }
@@ -214,7 +223,6 @@ body {
 #newSandwich {
   margin: 0px;
   width: 100%;
-  /* text-align: center; */
   margin: auto;
   padding: 0px;
   list-style-type: none;
