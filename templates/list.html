@@ -45,15 +45,6 @@
 
         <section class="container" style="position: relative">
 
-          <form id="search-form" style="position: absolute; z-index: +1; right: 4.5vw; top: 1vw;">
-            <input type="text" id="PopularSearch" class="search-input2">
-            <button id="PopularBtn" class="search-btn"></button>
-          </form>
-
-          <div style="position: absolute; right: 4vw; top: 2vw">
-            <img class="search-img" src="https://drive.google.com/uc?id=1b9E3nGJ7WDhS5i3S8pj4nzbYnW33pmey" />
-          </div>
-
           <!--          랭킹 라벨-->
 
           <!--          1-->
@@ -115,12 +106,6 @@
             <img class="ranking" src="https://drive.google.com/uc?id=1YwSb7cWnp6WGXlBrWhygIsBn5Qpb9L_Z" />
           </div>
 
-
-
-
-
-
-
         </section>
         <ul id="popularSandwich"></ul>
       </div>
@@ -134,15 +119,13 @@
         <section class="container" style="position: relative">
 
           <form id="Newsearch-form" style="position: absolute; z-index: +1; right: 4.5vw; top: 1vw;">
-            <input type="text" id="NewSearch" class="search-input">
+            <input type="text" id="NewSearch" class="search-input" onkeyup="filter()">
             <button id="NewBtn" class="search-btn"></button>
           </form>
 
           <div style="position: absolute; right: 4vw; top: 2vw">
             <img class="search-img" src="https://drive.google.com/uc?id=15n1Yinqu71wroZGEPD7Eqow-gJv4spal" />
           </div>
-
-
 
         </section>
         <ul id="newSandwich"></ul>
