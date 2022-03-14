@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, jsonify
 app = Flask(__name__)
 
 
-from bson import json_util, ObjectId
+from bson import json_util
 import json
 from pymongo import MongoClient
 from bson.objectid import ObjectId
