@@ -1,5 +1,3 @@
-import json
-
 from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
@@ -9,9 +7,7 @@ from bson import json_util, ObjectId
 import json
 from pymongo import MongoClient
 from bson.objectid import ObjectId
-import sys
-# from bson.json_util import dumps
-# from json import JSONEncoder
+
 
 # client = MongoClient('localhost', 27017)
 client = MongoClient('mongodb://test:test@52.79.241.120', 27017)
@@ -116,7 +112,6 @@ def all_popular():
 def like_sandwich():
     like_receive = request.form['like_give']
     target_id = db.userchoice.find_one({'_id':ObjectId(like_receive)})
-    # print(target_id, file=sys.stdout)
     current_like = target_id['like']
 
     new_like = current_like + 1
