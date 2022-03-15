@@ -2,7 +2,7 @@
   font-family: "Nanum Gothic Coding", monospace;
 }
 body {
-  background-image: url("https://drive.google.com/uc?id=1pjmsyqrniNHO5-fLGWrqvNqlw_V18Yzl");
+  background-image: url("img/resultpage/배경지(불투명.png");
   margin: 0px;
   padding: 0px;
 }
@@ -19,7 +19,7 @@ body {
   width: 50%;
 }
 .bg {
-  background-image: url("https://drive.google.com/uc?id=1pjmsyqrniNHO5-fLGWrqvNqlw_V18Yzl");
+  background-image: url("img/resultpage/배경지(불투명.png");
   background-repeat: repeat;
   width: 100vw;
 }

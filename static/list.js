@@ -39,21 +39,21 @@ function showPopular() {
             <img
               class="bar-bread"
               id="bar-bread"
-              src="https://drive.google.com/uc?id=11X3DD4jXWBJqg5lp-qdYaDb8L7wFyOeu"
+              src="../static/img/resultpage/bar_bread.png"
             />
           </div>
           <div style="position: absolute; left: 32vw; top: 11vw">
             <img
               class="bar-sauce"
               id="bar-sauce"
-              src="https://drive.google.com/uc?id=1xgMJMT19UtQnUmG96rKRvSOjFwJX4kOt"
+              src="../static/img/resultpage/bar_sauce.png"
             />
           </div>
           <div style="position: absolute; left: 31.5vw; top: 16vw">
             <img
               class="bar-cheese"
               id="bar-cheese"
-              src="https://drive.google.com/uc?id=1UmUNlUiUlHS6l1RxTEHImZwlBogi_olA"
+              src="../static/img/resultpage/bar_cheese.png"
             />
           </div>
 
@@ -114,7 +114,7 @@ function showPopular() {
           <div style="position: absolute; left: 6vw; top: 19vw; z-index: +1;">
             <img
                     class="img-tip"
-                    src="https://drive.google.com/uc?id=1G5_vQiPjjTp_I5aMpe8ZZ5ITvSmIAqPU"
+                    src="../static/img/resultpage/팁뱃지.png"
             />
           </div>
 
@@ -134,7 +134,7 @@ function showPopular() {
                 >
                     <img style="position: absolute; bottom: -2vw; left: -0.6vw;"
                             class="img-like"
-                            src="https://drive.google.com/uc?id=1607K8hfTAfjaBIxlhuNpSv7m-YIXQh38"/>
+                            src="../static/img/listpage/좋아요버튼2.png"/>
           </button>
 
           <div class="nb-like"
@@ -191,21 +191,21 @@ function showRecent() {
             <img
               class="bar-bread"
               id="bar-bread"
-              src="https://drive.google.com/uc?id=11X3DD4jXWBJqg5lp-qdYaDb8L7wFyOeu"
+              src="../static/img/resultpage/bar_bread.png"
             />
           </div>
           <div style="position: absolute; left: 32vw; top: 11vw">
             <img
               class="bar-sauce"
               id="bar-sauce"
-              src="https://drive.google.com/uc?id=1xgMJMT19UtQnUmG96rKRvSOjFwJX4kOt"
+              src="../static/img/resultpage/bar_sauce.png"
             />
           </div>
           <div style="position: absolute; left: 31.5vw; top: 16vw">
             <img
               class="bar-cheese"
               id="bar-cheese"
-              src="https://drive.google.com/uc?id=1UmUNlUiUlHS6l1RxTEHImZwlBogi_olA"
+              src="../static/img/resultpage/bar_cheese.png"
             />
           </div>
 
@@ -263,7 +263,7 @@ function showRecent() {
           <div style="position: absolute; left: 6vw; top: 19vw; z-index: +1;">
             <img
                     class="img-tip"
-                    src="https://drive.google.com/uc?id=1G5_vQiPjjTp_I5aMpe8ZZ5ITvSmIAqPU"
+                    src="../static/img/resultpage/팁뱃지.png"
             />
           </div>
 
@@ -281,7 +281,7 @@ function showRecent() {
                 >
                     <img style="position: absolute; bottom: -2vw; left: -0.6vw;"
                             class="img-like"
-                            src="https://drive.google.com/uc?id=1607K8hfTAfjaBIxlhuNpSv7m-YIXQh38"/>
+                            src="../static/img/listpage/좋아요버튼2.png"/>
           </button>
 
           <div class="nb-like"

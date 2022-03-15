@@ -22,14 +22,14 @@ function showResult() {
             <img
               class="img-title"
               id="img-title"
-              src="https://drive.google.com/uc?id=1lQK68KG4QmEZBMWxRhUxewkMpFxeWdT3"
+              src="../static/img/resultpage/제목.png"
             />
           </div>
           <div style="position: absolute; left: 25vw; top: 7vw">
             <img
               class="bar-title"
               id="bar-title"
-              src="https://drive.google.com/uc?id=1Ways8U1w59n0EtAMRI1PQkFQ_MQV4vVM"
+              src="../static/img/resultpage/bar_title.png"
             />
           </div>
 
@@ -38,21 +38,21 @@ function showResult() {
             <img
               class="bar-bread"
               id="bar-bread"
-              src="https://drive.google.com/uc?id=11X3DD4jXWBJqg5lp-qdYaDb8L7wFyOeu"
+              src="../static/img/resultpage/bar_bread.png"
             />
           </div>
           <div style="position: absolute; left: 34.5vw; top: 20.5vw">
             <img
               class="bar-sauce"
               id="bar-sauce"
-              src="https://drive.google.com/uc?id=1xgMJMT19UtQnUmG96rKRvSOjFwJX4kOt"
+              src="../static/img/resultpage/bar_sauce.png"
             />
           </div>
           <div style="position: absolute; left: 34vw; top: 25vw">
             <img
               class="bar-cheese"
               id="bar-cheese"
-              src="https://drive.google.com/uc?id=1UmUNlUiUlHS6l1RxTEHImZwlBogi_olA"
+              src="../static/img/resultpage/bar_cheese.png"
             />
           </div>
 
@@ -116,7 +116,7 @@ function showResult() {
           <div style="position: absolute; left: 6.8vw; top: 30vw; z-index: +1;">
             <img
                     class="img-tip"
-                    src="https://drive.google.com/uc?id=1G5_vQiPjjTp_I5aMpe8ZZ5ITvSmIAqPU"
+                    src="../static/img/resultpage/팁뱃지.png"
             />
           </div>
 
@@ -132,14 +132,14 @@ function showResult() {
           <div style="position: absolute; left: 2vw; top: 6.5vw; z-index: +1;">
             <img
                     class="img-tape"
-                    src="https://drive.google.com/uc?id=1M9jF8VYSwDLTr4p7N3DF8WQEDnrfoKHw"
+                    src="../static/img/resultpage/tape.png"
             />
           </div>
 
           <div style="position: absolute; left: 65vw; top: 27vw; z-index: +1;">
             <img
                     class="img-tape"
-                    src="https://drive.google.com/uc?id=1M9jF8VYSwDLTr4p7N3DF8WQEDnrfoKHw"
+                    src="../static/img/resultpage/tape.png"
             />
           </div>
 
@@ -149,28 +149,28 @@ function showResult() {
           <button class="btn-share" id="btn-link" style="position: absolute; left: 29.2vw; top: 40vw; z-index: +1;">
             <img
                     class="img-share"
-                    src="https://drive.google.com/uc?id=1FAPLC1AUmDDQWzlU8g2QK8hRkR5oTc6n"
+                    src="../static/img/resultpage/공유_링크.png"
             />
           </button>
 
           <button class="btn-share" id="btn-kakao" style="position: absolute; left: 36.7vw; top: 40vw; z-index: +1;">
             <img
                     class="img-share"
-                    src="https://drive.google.com/uc?id=1bhbYUgEwBsw64vqD7ixAmFDHF3mZDVZg"
+                    src="../static/img/resultpage/공유_카톡.png"
             />
           </button>
 
           <button class="btn-share" id="btn-facebook" style="position: absolute; left: 44.2vw; top: 40vw; z-index: +1;">
             <img
                     class="img-share"
-                    src="https://drive.google.com/uc?id=1nmkdRjr5Mi_Xa1KtLX2gkHBHtGSZlLag"
+                    src="../static/img/resultpage/공유_페이스북.png"
             />
           </button>
 
            <button onclick="window.open('https://www.subway.co.kr/storeSearch')" type="button" class="btn-share" id="btn-map" style="position: absolute; left: 29.2vw; top: 47.5vw; z-index: +1;">
             <img
                     class="img-map"
-                    src="https://drive.google.com/uc?id=1_G__Vqbz5knvZ2XiKhIo7iFaiR2Hqzet"
+                    src="../static/img/resultpage/주변매장.png"
             />
           </button>
 
@@ -179,16 +179,6 @@ function showResult() {
         $(".result-box").append(temp_html);
       }
 
-      // function likeRecipe(userid) {
-      //   $.ajax({
-      //   type: 'POST',
-      //  url: '/recipe/like',
-      //  data: {name_give: userid},
-      //  success: function (response) {
-      //   alert(response['msg']);
-      //  window.location.reload()
-      //      }
-      //   });
     },
   });
 }
