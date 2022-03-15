@@ -1,5 +1,6 @@
 * {
   font-family: "Nanum Gothic Coding", monospace;
+  margin: 0px;
 }
 body {
   background-image: url("https://drive.google.com/uc?id=1pjmsyqrniNHO5-fLGWrqvNqlw_V18Yzl");
@@ -17,6 +18,7 @@ body {
   background-color: white;
   width: 100vw;
   height: 20vh;
+  margin: 0px;
 }
 
 .logo {
@@ -50,7 +52,8 @@ body {
   border: none;
   width: 20vw;
   height: 2.5vw;
-  margin-top: 1.6vw;
+  margin-top: 1.7vw;
+  margin-right: 9vw;
   font-size: 1.5vw;
 }
 .search-input2 {
@@ -110,6 +113,7 @@ body {
   margin: 0 auto auto auto;
   border-radius: 1vw;
   padding-bottom: 3vw;
+  min-height: 40vw;
 }
 
 /* 카드 내용 */
@@ -150,7 +154,7 @@ body {
   text-align: center;
 }
 .name {
-  font-size: 2.1vw;
+  font-size: 2vw;
   font-weight: bold;
 }
 
@@ -186,7 +190,7 @@ body {
 
 .nb-like {
   width: 5vw;
-  height: 3 vw;
+  height: 3vw;
   font-size: 2.2vw;
   text-align: center;
   font-weight: bolder;
@@ -223,6 +227,7 @@ body {
 #newSandwich {
   margin: 0px;
   width: 100%;
+  /* text-align: center; */
   margin: auto;
   padding: 0px;
   list-style-type: none;
