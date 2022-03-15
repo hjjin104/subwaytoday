@@ -50,7 +50,7 @@ body {
 #menu {
   position: absolute;
   background-color: rgb(255, 217, 102);
-  top: 5vw;
+  top: 6vw;
   font-size: 3vw;
   font-weight: normal;
 }
@@ -74,7 +74,9 @@ body {
   outline: none;
   font-size: 2.3vw;
   border-radius: 1vw;
-  font-weight: bold;
+  border-bottom-left-radius: 0vw;
+  border-bottom-right-radius: 0vw;
+  font-weight: 700;
   color: black;
   background-color: rgb(169, 209, 142);
   cursor: pointer;
@@ -294,6 +296,7 @@ span {
   width: 80%;
   height: 2.5vw;
   margin: auto;
+  font-size: 1.5vw;
   text-align: center;
 }
 /* 푸시 */
