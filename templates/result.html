@@ -24,10 +24,29 @@
           src="../static/img/resultpage/결과지.png" />
         <!--   타이틀 -->
 
+        <!--   공유버튼 -->
 
-        <button class="btn-share" id="btn-home" style="position: absolute; left: 29vw; top: 52vw; z-index: +1;"
-          onclick="location.href='/listing'">
-          <img class="img-map" src="../static/img/resultpage/다른꿀조합.png" />
+
+        <button title="링크 공유하기" onclick="clip(); return false;" class="btn-share" id="btn-share" style="position: absolute; right: 1vw; bottom: 1vw; z-index: +1;">
+          <img
+                  class="img-share"
+                  src="../static/img/resultpage/공유_링크.png"
+          />
+        </button>
+
+
+        <button onclick="window.open('https://www.subway.co.kr/storeSearch')" type="button" class="btn-share"
+                id="btn-map" style="position: absolute; left: 29.2vw; top: 40vw; z-index: +1;">
+          <img
+                  class="img-map"
+                  src="../static/img/resultpage/주변매장.png"
+          />
+        </button>
+
+
+        <button class="btn-share" id="btn-home" style="position: absolute; left: 29vw; top: 44.5vw; z-index: +1;"
+                onclick="location.href='/listing'">
+          <img class="img-map" src="../static/img/resultpage/다른꿀조합.png"/>
         </button>
 
 
@@ -36,6 +55,7 @@
     </div>
   </div>
   <script src="../static/result.js"></script>
+
 </body>
 
 </html>

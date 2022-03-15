@@ -143,36 +143,7 @@ function showResult() {
             />
           </div>
 
-          <!--   공유버튼 -->
-
-
-          <button class="btn-share" id="btn-link" style="position: absolute; left: 29.2vw; top: 40vw; z-index: +1;">
-            <img
-                    class="img-share"
-                    src="../static/img/resultpage/공유_링크.png"
-            />
-          </button>
-
-          <button class="btn-share" id="btn-kakao" style="position: absolute; left: 36.7vw; top: 40vw; z-index: +1;">
-            <img
-                    class="img-share"
-                    src="../static/img/resultpage/공유_카톡.png"
-            />
-          </button>
-
-          <button class="btn-share" id="btn-facebook" style="position: absolute; left: 44.2vw; top: 40vw; z-index: +1;">
-            <img
-                    class="img-share"
-                    src="../static/img/resultpage/공유_페이스북.png"
-            />
-          </button>
-
-           <button onclick="window.open('https://www.subway.co.kr/storeSearch')" type="button" class="btn-share" id="btn-map" style="position: absolute; left: 29.2vw; top: 47.5vw; z-index: +1;">
-            <img
-                    class="img-map"
-                    src="../static/img/resultpage/주변매장.png"
-            />
-          </button>
+          
 
 `;
 
@@ -181,4 +152,17 @@ function showResult() {
 
     },
   });
+}
+
+function clip(){
+
+	var url = '';
+	var textarea = document.createElement("textarea");
+	document.body.appendChild(textarea);
+	url = window.document.location.href;
+	textarea.value = url;
+	textarea.select();
+	document.execCommand("copy");
+	document.body.removeChild(textarea);
+	alert("URL이 복사되었습니다.")
 }

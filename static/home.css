@@ -31,11 +31,11 @@
         }
 
         .img-share{
-            width: 4vw;
+            width: 5vw;
         }
 
         .btn-share{
             border: none;
-            background: none;
+            background-color: transparent;
             cursor: pointer;
         }
