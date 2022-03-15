@@ -64,7 +64,6 @@ body {
   padding-top: 5vw;
   padding-bottom: 1vw;
   padding: 1vw 8.1vw;
-
 }
 /* 샌드위치 빵 치즈 소스 버튼 */
 .NavBtn {
@@ -278,6 +277,7 @@ span {
 
 #tab4 {
   height: 50vw;
+  width: 63.8vw;
 }
 .tip {
   position: absolute;
@@ -296,3 +296,4 @@ span {
   margin: auto;
   text-align: center;
 }
+/* 푸시 */
