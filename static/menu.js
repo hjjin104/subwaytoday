@@ -73,7 +73,9 @@ for (var i = 0; i < cheeseLinks.length; i++) {
 
 // 다 더해지는 값
 
-const submitButton = document.querySelector("#NextPage");
+
+
+const submitButton = document.querySelector(".total-btn");
 
 function gogo() {
   let sauceArr = [];
@@ -95,6 +97,7 @@ function gogo() {
     type: "POST",
     url: "/menu",
     traditional: true,
+    async: false,
     data: {
       find_give: sandwich,
       sandwich_give: sandwich,
@@ -106,10 +109,11 @@ function gogo() {
     success: function (response) {
       // 성공하면
       if (response["result"] == "success") {
-        alert(response["msg"]);
+
       }
     }
   });
+location.replace('/check');
 }
 
 submitButton.addEventListener("click", gogo);

@@ -80,9 +80,8 @@ def menuPost():
         'img': user,
         'like': 0,
     }
-    objectid = db.userchoice.insert_one(doc).inserted_id
     db.userchoice.insert_one(doc)
-    return jsonify({'result': 'success', 'msg': '조합이 완료되었습니다!'})
+    return jsonify({'result': 'success'})
 
 
 
