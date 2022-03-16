@@ -274,7 +274,7 @@ function showRecent() {
           </div>
 
           <button onclick="likeSandwichRecent('${id}')"
-                        style="position: absolute; top: 22vw; left: 66vw;"
+                        style="position: absolute; top: 21.5vw; left: 66vw;"
                         class="btn-like"
                         id="btn-like"
                         type="submit"
@@ -285,7 +285,7 @@ function showRecent() {
           </button>
 
           <div class="nb-like"
-                    style="position: absolute; top: 22.5vw; left: 68.5vw; z-index: +1">
+                    style="position: absolute; top: 22.1vw; left: 68.5vw; z-index: +1">
                     <span id="nb-like">${like}</span></div>
         </div>
       </div>`;
