@@ -1,5 +1,5 @@
 * {
-  font-family: "Nanum Gothic Coding", monospace;
+  font-family: "IBM Plex Sans KR", sans-serif;
 }
 
 .bg {
@@ -43,10 +43,10 @@
   position: absolute;
   right: 6.5vw;
   top: 0.46vw;
-  width: 11vw;
+  width: 10vw;
   height: 5vw;
   z-index: +1;
-  background-color: white;
+  background-color: rgb(255, 255, 255, 0);
   border: 1px solid black;
   border: none;
   border-radius: 1vw;
