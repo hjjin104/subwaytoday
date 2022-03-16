@@ -61,43 +61,46 @@ function showResult() {
           <div
             id="menu"
             class="name-div"
-            style="position: absolute; left: 6.9vw; top: 13vw"
+            style="position: absolute; left: 6.9vw; top: 13vw; font-size: 1.8vw; font-weight: 600;"
           >
             <span class="name">[${sandwich}]</span>
           </div>
+          
           <div
             id="bread"
             style="
               position: absolute;
               left: 45vw;
               top: 14.4vw;
-              font-size: 1.8vw;
-              font-weight: bold;
+              font-size: 2vw;
+              font-weight: 600;
             "
           >
             ${bread}
           </div>
+          
           <div
             id="sauce"
             style="
               position: absolute;
               left: 47vw;
               top: 20vw;
-              font-size: 1.8vw;
-              font-weight: bold;
+              font-size: 2vw;
+              font-weight: 600;
               width: 26vw;
             "
           >
             ${sauce}
           </div>
+          
           <div
             id="cheese"
             style="
               position: absolute;
               left: 43.8vw;
               top: 25.5vw;
-              font-size: 1.8vw;
-              font-weight: bold;
+              font-size: 2vw;
+              font-weight: 600;
             "
           >
             ${cheese}
@@ -123,7 +126,7 @@ function showResult() {
           <div class="input-tip" style="position: absolute; left: 12vw; top: 32vw">
           </div>
 
-          <div id="input-tip" class="input-tip2" style="position: absolute; left: 12vw; top: 32.7vw; z-index: +1">
+          <div id="input-tip" class="input-tip2" style="font-weight: 500; position: absolute; left: 12vw; top: 32.2vw; z-index: +1">
             <span>${comment}</span> </div>
 
           <!--   데코 오브젝트 -->

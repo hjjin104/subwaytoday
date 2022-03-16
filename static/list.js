@@ -71,7 +71,7 @@ function showPopular() {
               left: 43vw;
               top: 4.4vw;
               font-size: 2vw;
-              font-weight: bold;
+              font-weight: 600;
             "
           >
             ${bread}
@@ -83,7 +83,7 @@ function showPopular() {
               left: 45vw;
               top: 11vw;
               font-size: 1.8vw;
-              font-weight: bold;
+              font-weight: 600;
             "
           >
             ${sauce}
@@ -95,7 +95,7 @@ function showPopular() {
               left: 41vw;
               top: 16.5vw;
               font-size: 2vw;
-              font-weight: bold;
+              font-weight: 600;
             "
           >
             ${cheese}
@@ -121,7 +121,7 @@ function showPopular() {
           <div class="input-tip" style="position: absolute; left: 8vw; top: 22vw">
           </div>
 
-          <div id="input-tip" class="input-tip2" style="position: absolute; left: 8vw; top: 22.8vw">  
+          <div id="input-tip" class="input-tip2" style="position: absolute; font-weight: 500; left: 8vw; top: 22vw">  
             <span>${comment}</span> 
           </div>
 
@@ -138,7 +138,7 @@ function showPopular() {
           </button>
 
           <div class="nb-like"
-                    style="position: absolute; top: 23vw; left: 68.5vw; z-index: +1">
+                    style="position: absolute; top: 22.5vw; left: 68.5vw; z-index: +1">
                     <span id="nb-like">${like}</span></div>
         </div>
       </div>`;
@@ -223,7 +223,7 @@ function showRecent() {
               left: 43vw;
               top: 4.4vw;
               font-size: 2vw;
-              font-weight: bold;
+              font-weight: 600;
             "
           >
             ${bread}
@@ -235,7 +235,7 @@ function showRecent() {
               left: 45vw;
               top: 11vw;
               font-size: 1.8vw;
-              font-weight: bold;
+              font-weight: 600;
             "
           >
             ${sauce}
@@ -247,7 +247,7 @@ function showRecent() {
               left: 41vw;
               top: 16.5vw;
               font-size: 2vw;
-              font-weight: bold;
+              font-weight: 600;
             "
           >
             ${cheese}
@@ -269,7 +269,7 @@ function showRecent() {
 
           <div class="input-tip" style="position: absolute; left: 8vw; top: 22vw">
           </div>
-          <div id="input-tip" class="input-tip2" style="position: absolute; left: 8vw; top: 22.8vw">  
+          <div id="input-tip" class="input-tip2" style="position: absolute; font-weight: 500; left: 8vw; top: 22vw">  
             <span>${comment}</span> 
           </div>
 
@@ -285,7 +285,7 @@ function showRecent() {
           </button>
 
           <div class="nb-like"
-                    style="position: absolute; top: 23vw; left: 68.5vw; z-index: +1">
+                    style="position: absolute; top: 22.5vw; left: 68.5vw; z-index: +1">
                     <span id="nb-like">${like}</span></div>
         </div>
       </div>`;

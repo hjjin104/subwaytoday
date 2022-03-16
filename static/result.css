@@ -1,4 +1,4 @@
-*{font-family: 'Nanum Gothic Coding', monospace;
+*{font-family: "IBM Plex Sans KR", sans-serif;
 
         }
 
@@ -30,7 +30,7 @@
         .result-box{
             background-color: white;
             width: 80vw;
-            height: 52vw;
+            height: 56vw;
             margin: 5vw auto auto auto;
             border-radius: 2vw;
         }
