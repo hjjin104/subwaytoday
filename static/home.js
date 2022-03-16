@@ -16,7 +16,7 @@ const subs = document.getElementById("btn");
 
 function change() {
   const subs = document.getElementById("btn");
-  if (subs.innerText === "") {
-    subs.innerText = "김다원 김정현 이지영 정수연 진혜주";
-  } else subs.innerText = "";
+  if (subs.innerText === "About Us") {
+    subs.innerText = "김다원 김정현 이지영 \n정수연 진혜주";
+  } else subs.innerText = "About Us";
 }
