@@ -25,7 +25,3 @@
 + Choose each ingredient (sandwich: main, bread, sauce, cheese) to make your own sandwich combination.
 + Click like button to other people's sandwiches.
 + Search sandwich made by others.
-
-
-### 📖 팀 개발일지
-
